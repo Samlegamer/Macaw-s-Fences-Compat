@@ -1,20 +1,10 @@
-buildscript {
-    repositories {
-        maven { url = 'https://maven.minecraftforge.net' }
-        mavenCentral()
-    }
-    dependencies {
-        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
-    }
-}
 plugins {
     id 'eclipse'
     id 'maven-publish'
+    id 'net.minecraftforge.gradle' version '5.1.+'
 }
-apply plugin: 'net.minecraftforge.gradle'
 
-
-version = '1.18.2-1.0'
+version = '1.19.2-1.0'
 group = 'fr.samlegamer.mcwfencesbyg'
 archivesBaseName = 'mcwfencesbyg'
 
@@ -23,7 +13,7 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty 'java.vm.version'} (${System.getProperty 'java.vendor'}), Arch: ${System.getProperty 'os.arch'}"
 minecraft
 {
-    mappings channel: 'official', version: '1.18.2'
+    mappings channel: 'official', version: '1.19.2'
 
     runs {
         client {
@@ -108,10 +98,10 @@ repositories
 
 dependencies
 {
-    minecraft 'net.minecraftforge:forge:1.18.2-40.1.16'
- 	implementation fg.deobf("curse.maven:macaws-fences-and-walls-453925:3682820")
-	implementation fg.deobf("curse.maven:oh-the-biomes-youll-go-247560:3681712")
-	implementation fg.deobf("curse.maven:terrablender-563928:3681688")
+    minecraft 'net.minecraftforge:forge:1.19.2-43.0.2'
+	implementation fg.deobf("curse.maven:oh-the-biomes-youll-go-247560:3953421")
+ 	implementation fg.deobf("curse.maven:macaws-fences-and-walls-453925:3923128")
+ 	implementation fg.deobf("curse.maven:terrablender-563928:3926355")
 }
 
 jar {

@@ -8,10 +8,8 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import potionstudios.byg.BYG;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import com.mcwfences.kikoz.MacawsFences;
 import fr.samlegamer.mcwfencesbyg.block.MFBYGBlocksRegistry;
 
 @Mod(McwFencesBYG.MODID)
@@ -24,7 +22,6 @@ public class McwFencesBYG
     public McwFencesBYG()
     {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::client);
-        
         LOGGER.info("Macaw's Fences - Oh The Biomes You'll Go : Loading ...");
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		MFBYGBlocksRegistry.ITEMS_REGISTRY.register(bus);
@@ -40,13 +37,19 @@ public class McwFencesBYG
     	ItemBlockRenderTypes.setRenderLayer(MFBYGBlocksRegistry.aspen_horse_fence.get(), RenderType.cutout());
     	ItemBlockRenderTypes.setRenderLayer(MFBYGBlocksRegistry.aspen_wired_fence.get(), RenderType.cutout());
     	ItemBlockRenderTypes.setRenderLayer(MFBYGBlocksRegistry.aspen_highley_gate.get(), RenderType.cutout());
-    	ItemBlockRenderTypes.setRenderLayer(MFBYGBlocksRegistry.picket_fenceAll.get(), RenderType.cutout());
-		ItemBlockRenderTypes.setRenderLayer(MFBYGBlocksRegistry.stockade_fenceAll.get(), RenderType.cutout());
-		ItemBlockRenderTypes.setRenderLayer(MFBYGBlocksRegistry.horse_fenceAll.get(), RenderType.cutout());
-		ItemBlockRenderTypes.setRenderLayer(MFBYGBlocksRegistry.wired_fenceAll.get(), RenderType.cutout());
-		ItemBlockRenderTypes.setRenderLayer(MFBYGBlocksRegistry.highley_gateAll.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBYGBlocksRegistry.aspen_pyramid_gate.get(), RenderType.cutout());
+    	
+    	for(String i : MFBYGBlocksRegistry.MATERIAL)
+    	{
+        	ItemBlockRenderTypes.setRenderLayer(MFBYGBlocksRegistry.picket_fenceAll.get(), RenderType.cutout());
+    		ItemBlockRenderTypes.setRenderLayer(MFBYGBlocksRegistry.stockade_fenceAll.get(), RenderType.cutout());
+    		ItemBlockRenderTypes.setRenderLayer(MFBYGBlocksRegistry.horse_fenceAll.get(), RenderType.cutout());
+    		ItemBlockRenderTypes.setRenderLayer(MFBYGBlocksRegistry.wired_fenceAll.get(), RenderType.cutout());
+    		ItemBlockRenderTypes.setRenderLayer(MFBYGBlocksRegistry.highley_gateAll.get(), RenderType.cutout());
+        	ItemBlockRenderTypes.setRenderLayer(MFBYGBlocksRegistry.pyramid_gateAll.get(), RenderType.cutout());
+    	}
 	}
-	
+    
 	static class TabsMFBOP extends CreativeModeTab
 	{
 		public TabsMFBOP(String p_i1853_2_)
@@ -65,6 +68,4 @@ public class McwFencesBYG
 			return false;
 		}
 	}
-	
-	private void require(BYG bop, MacawsFences bridges) {}
 }

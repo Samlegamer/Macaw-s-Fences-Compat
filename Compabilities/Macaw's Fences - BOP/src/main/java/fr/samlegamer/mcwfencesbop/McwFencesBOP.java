@@ -8,13 +8,8 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import terrablender.core.TerraBlender;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-import com.mcwfences.kikoz.MacawsFences;
-
-import biomesoplenty.core.BiomesOPlenty;
 import fr.samlegamer.mcwfencesbop.block.MFBOPBlocksRegistry;
 
 @Mod(McwFencesBOP.MODID)
@@ -27,7 +22,6 @@ public class McwFencesBOP
     public McwFencesBOP()
     {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::client);
-        
         LOGGER.info("Macaw's Fences - Biome O' Plenty : Loading ...");
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		MFBOPBlocksRegistry.ITEMS_REGISTRY.register(bus);
@@ -43,12 +37,78 @@ public class McwFencesBOP
     	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.cherry_horse_fence.get(), RenderType.cutout());
     	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.cherry_wired_fence.get(), RenderType.cutout());
     	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.cherry_highley_gate.get(), RenderType.cutout());
-		ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.picket_fenceAll.get(), RenderType.cutout());
-		ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.stockade_fenceAll.get(), RenderType.cutout());
-		ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.horse_fenceAll.get(), RenderType.cutout());
-		ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.wired_fenceAll.get(), RenderType.cutout());
-		ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.highley_gateAll.get(), RenderType.cutout());
-	}
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.cherry_pyramid_gate.get(), RenderType.cutout());
+    	
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.dead_picket_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.dead_stockade_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.dead_horse_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.dead_wired_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.dead_highley_gate.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.dead_pyramid_gate.get(), RenderType.cutout());
+
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.fir_picket_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.fir_stockade_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.fir_horse_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.fir_wired_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.fir_highley_gate.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.fir_pyramid_gate.get(), RenderType.cutout());
+
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.hellbark_picket_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.hellbark_stockade_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.hellbark_horse_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.hellbark_wired_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.hellbark_highley_gate.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.hellbark_pyramid_gate.get(), RenderType.cutout());
+
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.jacaranda_picket_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.jacaranda_stockade_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.jacaranda_horse_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.jacaranda_wired_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.jacaranda_highley_gate.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.jacaranda_pyramid_gate.get(), RenderType.cutout());
+
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.magic_picket_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.magic_stockade_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.magic_horse_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.magic_wired_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.magic_highley_gate.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.magic_pyramid_gate.get(), RenderType.cutout());
+
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.mahogany_picket_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.mahogany_stockade_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.mahogany_horse_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.mahogany_wired_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.mahogany_highley_gate.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.mahogany_pyramid_gate.get(), RenderType.cutout());
+
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.palm_picket_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.palm_stockade_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.palm_horse_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.palm_wired_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.palm_highley_gate.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.palm_pyramid_gate.get(), RenderType.cutout());
+
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.redwood_picket_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.redwood_stockade_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.redwood_horse_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.redwood_wired_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.redwood_highley_gate.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.redwood_pyramid_gate.get(), RenderType.cutout());
+
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.umbran_picket_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.umbran_stockade_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.umbran_horse_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.umbran_wired_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.umbran_highley_gate.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.umbran_pyramid_gate.get(), RenderType.cutout());
+
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.willow_picket_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.willow_stockade_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.willow_horse_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.willow_wired_fence.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.willow_highley_gate.get(), RenderType.cutout());
+    	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.willow_pyramid_gate.get(), RenderType.cutout());
+    }
 	
 	static class TabsMFBOP extends CreativeModeTab
 	{
@@ -68,6 +128,4 @@ public class McwFencesBOP
 			return false;
 		}
 	}
-	
-	private void require(TerraBlender t, BiomesOPlenty bop, MacawsFences bridges) {}
 }

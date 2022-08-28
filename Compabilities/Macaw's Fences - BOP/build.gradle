@@ -1,21 +1,10 @@
-buildscript {
-    repositories {
-        maven { url = 'https://maven.minecraftforge.net' }
-        mavenCentral()
-    }
-    dependencies {
-        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
-    }
-}
-
 plugins {
     id 'eclipse'
     id 'maven-publish'
+    id 'net.minecraftforge.gradle' version '5.1.+'
 }
-apply plugin: 'net.minecraftforge.gradle'
 
-
-version = '1.18.2-1.0'
+version = '1.19.2-1.0'
 group = 'fr.samlegamer.mcwfencesbop'
 archivesBaseName = 'mcwfencesbop'
 
@@ -24,7 +13,7 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty 'java.vm.version'} (${System.getProperty 'java.vendor'}), Arch: ${System.getProperty 'os.arch'}"
 minecraft
 {
-    mappings channel: 'official', version: '1.18.2'
+    mappings channel: 'official', version: '1.19.2'
 
     runs {
         client {
@@ -109,10 +98,10 @@ repositories
 
 dependencies
 {
-    minecraft 'net.minecraftforge:forge:1.18.2-40.0.32'
-	implementation fg.deobf("curse.maven:biomes-o-plenty-220318:3683452")
- 	implementation fg.deobf("curse.maven:macaws-fences-and-walls-453925:3682820")
- 	implementation fg.deobf("curse.maven:terrablender-563928:3681688") 	
+    minecraft 'net.minecraftforge:forge:1.19.2-43.0.0'
+	implementation fg.deobf("curse.maven:biomes-o-plenty-220318:3925988")
+ 	implementation fg.deobf("curse.maven:macaws-fences-and-walls-453925:3923128")
+ 	implementation fg.deobf("curse.maven:terrablender-563928:3926355")
 }
 
 jar {
@@ -120,7 +109,7 @@ jar {
         attributes([
                 "Specification-Title"     : "mcwfencesbop",
                 "Specification-Vendor"    : "mcwfencesbopsareus",
-                "Specification-Version"   : "1", // We are version 1 of ourselves
+                "Specification-Version"   : "1",
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,
                 "Implementation-Vendor"   : "mcwfencesbopsareus",
@@ -145,5 +134,5 @@ publishing {
 }
 
 tasks.withType(JavaCompile).configureEach {
-    options.encoding = 'UTF-8'
+    options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
 }
