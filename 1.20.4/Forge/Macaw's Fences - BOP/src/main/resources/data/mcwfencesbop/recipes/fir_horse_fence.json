@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "B":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "A":
+        {
+            "item": "biomesoplenty:fir_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfencesbop:fir_horse_fence",
+        "count": 3
+    }
+}

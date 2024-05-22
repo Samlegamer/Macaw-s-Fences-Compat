@@ -1,0 +1,4 @@
+{"parent":"mcwfences:block/parent/stockade_fence_side",
+"textures":{"4": "biomesoplenty:block/redwood_planks",
+"5": "biomesoplenty:block/redwood_log",
+"particle": "biomesoplenty:block/redwood_planks"}}
