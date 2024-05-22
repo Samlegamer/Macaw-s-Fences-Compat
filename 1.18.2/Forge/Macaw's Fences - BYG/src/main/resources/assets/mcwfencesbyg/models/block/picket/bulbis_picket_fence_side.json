@@ -1,0 +1,4 @@
+{"parent": "mcwfences:block/parent/picket_fence_side",
+"textures":{"2": "byg:block/bulbis_stem",
+"particle": "byg:block/bulbis_planks",
+"texture": "byg:block/bulbis_planks"}}

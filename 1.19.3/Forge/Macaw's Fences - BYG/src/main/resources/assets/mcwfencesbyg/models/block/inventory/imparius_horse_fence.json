@@ -1,0 +1,5 @@
+{"parent":"mcwfences:block/parent/inventory/horse_fence",
+"textures":{"1_texture": "byg:block/imparius/planks",
+"1_1_texture": "byg:block/imparius/log_top",
+"particle": "byg:block/imparius/log",
+"wall": "byg:block/imparius/log"}}

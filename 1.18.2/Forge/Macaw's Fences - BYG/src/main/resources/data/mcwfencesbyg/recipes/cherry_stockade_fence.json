@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "byg:cherry_log"
+        },    
+        
+        "B":
+        {
+            "item": "byg:cherry_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfencesbyg:cherry_stockade_fence",
+        "count": 3
+    }
+}

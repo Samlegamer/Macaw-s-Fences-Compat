@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "B":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "A":
+        {
+            "item": "byg:jacaranda_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "z_mcwfencesbyg:jacaranda_horse_fence",
+        "count": 3
+    }
+}

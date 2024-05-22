@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "byg:rainbow_eucalyptus_log"
+        },    
+        
+        "B":
+        {
+            "item": "byg:rainbow_eucalyptus_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfencesbyg:rainbow_eucalyptus_stockade_fence",
+        "count": 3
+    }
+}

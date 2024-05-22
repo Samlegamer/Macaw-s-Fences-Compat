@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "byg:lament_log"
+        },    
+        
+        "B":
+        {
+            "item": "byg:lament_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfencesbyg:lament_stockade_fence",
+        "count": 3
+    }
+}

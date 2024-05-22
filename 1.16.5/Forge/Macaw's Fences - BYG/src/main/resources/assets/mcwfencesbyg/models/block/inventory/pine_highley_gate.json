@@ -1,0 +1,4 @@
+{"parent":"mcwfences:block/parent/inventory/highley_gate",
+"textures":{"2": "byg:block/pine_planks",
+"particle": "byg:block/pine_log",
+"1_texture": "byg:block/pine_log"}}

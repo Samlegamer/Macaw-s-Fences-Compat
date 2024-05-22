@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "B":
+        {
+            "item": "byg:baobab_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfencesbyg:baobab_highley_gate",
+        "count": 1
+    }
+}

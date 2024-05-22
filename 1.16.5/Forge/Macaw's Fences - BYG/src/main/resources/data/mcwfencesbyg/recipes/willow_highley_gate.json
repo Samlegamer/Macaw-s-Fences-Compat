@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "B":
+        {
+            "item": "byg:willow_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfencesbyg:willow_highley_gate",
+        "count": 1
+    }
+}

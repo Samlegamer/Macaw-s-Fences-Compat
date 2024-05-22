@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "byg:zelkova_log"
+        },    
+        
+        "B":
+        {
+            "item": "byg:zelkova_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfencesbyg:zelkova_stockade_fence",
+        "count": 3
+    }
+}

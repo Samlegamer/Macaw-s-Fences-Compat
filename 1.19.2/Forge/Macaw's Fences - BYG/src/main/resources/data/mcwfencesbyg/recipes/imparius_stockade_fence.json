@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "byg:imparius_stem"
+        },    
+        
+        "B":
+        {
+            "item": "byg:imparius_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfencesbyg:imparius_stockade_fence",
+        "count": 3
+    }
+}

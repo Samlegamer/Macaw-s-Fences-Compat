@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "byg:baobab_log"
+        },    
+        
+        "B":
+        {
+            "item": "byg:baobab_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfencesbyg:baobab_stockade_fence",
+        "count": 3
+    }
+}

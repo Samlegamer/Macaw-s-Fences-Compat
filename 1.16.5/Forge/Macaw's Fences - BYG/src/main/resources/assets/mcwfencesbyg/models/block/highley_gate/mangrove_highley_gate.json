@@ -1,0 +1,4 @@
+{"parent": "mcwfences:block/parent/highley_gate",
+"textures":{"2": "byg:block/mangrove_planks",
+"particle": "byg:block/mangrove_planks",
+"texture": "byg:block/mangrove_log"}}

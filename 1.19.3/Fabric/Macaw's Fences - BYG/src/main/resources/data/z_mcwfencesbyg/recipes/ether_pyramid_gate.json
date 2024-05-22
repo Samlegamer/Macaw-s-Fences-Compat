@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ACA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "B":
+        {
+            "item": "byg:ether_log"
+        },
+		
+		"C":
+        {
+            "item": "byg:ether_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "z_mcwfencesbyg:ether_pyramid_gate",
+        "count": 1
+    }
+}

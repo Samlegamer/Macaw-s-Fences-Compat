@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "B":
+        {
+            "item": "byg:skyris_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfencesbyg:skyris_highley_gate",
+        "count": 1
+    }
+}

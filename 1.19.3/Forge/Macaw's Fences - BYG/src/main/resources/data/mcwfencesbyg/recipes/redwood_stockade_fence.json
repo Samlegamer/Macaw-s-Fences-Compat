@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "byg:redwood_log"
+        },    
+        
+        "B":
+        {
+            "item": "byg:redwood_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfencesbyg:redwood_stockade_fence",
+        "count": 3
+    }
+}

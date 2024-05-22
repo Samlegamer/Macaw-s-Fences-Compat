@@ -1,0 +1,4 @@
+{"parent":"mcwfences:block/parent/inventory/highley_gate",
+"textures":{"2": "biomesoplenty:block/willow_planks",
+"particle": "biomesoplenty:block/willow_log",
+"1_texture": "biomesoplenty:block/willow_log"}}

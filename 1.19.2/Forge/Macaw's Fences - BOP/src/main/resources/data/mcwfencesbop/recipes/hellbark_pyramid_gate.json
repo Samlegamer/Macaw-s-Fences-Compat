@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ACA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "B":
+        {
+            "item": "biomesoplenty:hellbark_log"
+        },
+		
+		"C":
+        {
+            "item": "biomesoplenty:hellbark_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfencesbop:hellbark_pyramid_gate",
+        "count": 1
+    }
+}

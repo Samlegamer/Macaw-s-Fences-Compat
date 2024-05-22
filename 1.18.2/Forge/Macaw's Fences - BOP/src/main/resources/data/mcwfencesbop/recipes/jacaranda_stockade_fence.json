@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "biomesoplenty:jacaranda_log"
+        },    
+        
+        "B":
+        {
+            "item": "biomesoplenty:jacaranda_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfencesbop:jacaranda_stockade_fence",
+        "count": 3
+    }
+}

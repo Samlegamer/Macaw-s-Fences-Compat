@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ACA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "B":
+        {
+            "item": "byg:green_enchanted_log"
+        },
+		
+		"C":
+        {
+            "item": "byg:green_enchanted_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfencesbyg:green_enchanted_pyramid_gate",
+        "count": 1
+    }
+}

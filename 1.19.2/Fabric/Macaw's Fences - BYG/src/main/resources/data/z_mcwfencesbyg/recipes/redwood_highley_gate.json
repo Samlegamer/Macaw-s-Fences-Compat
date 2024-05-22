@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "B":
+        {
+            "item": "byg:redwood_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "z_mcwfencesbyg:redwood_highley_gate",
+        "count": 1
+    }
+}

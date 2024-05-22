@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ACA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "B":
+        {
+            "item": "byg:nightshade_log"
+        },
+		
+		"C":
+        {
+            "item": "byg:nightshade_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfencesbyg:nightshade_pyramid_gate",
+        "count": 1
+    }
+}

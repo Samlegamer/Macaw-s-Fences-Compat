@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "byg:sythian_stem"
+        },    
+        
+        "B":
+        {
+            "item": "byg:sythian_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfencesbyg:sythian_stockade_fence",
+        "count": 3
+    }
+}

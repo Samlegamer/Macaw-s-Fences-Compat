@@ -1,0 +1,4 @@
+{"parent": "mcwfences:block/parent/highley_gate",
+"textures":{"2": "byg:block/aspen/planks",
+"particle": "byg:block/aspen/planks",
+"texture": "byg:block/aspen/log"}}

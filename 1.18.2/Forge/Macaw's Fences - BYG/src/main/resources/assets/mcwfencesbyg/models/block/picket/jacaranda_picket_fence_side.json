@@ -1,0 +1,4 @@
+{"parent": "mcwfences:block/parent/picket_fence_side",
+"textures":{"2": "byg:block/jacaranda_log",
+"particle": "byg:block/jacaranda_planks",
+"texture": "byg:block/jacaranda_planks"}}

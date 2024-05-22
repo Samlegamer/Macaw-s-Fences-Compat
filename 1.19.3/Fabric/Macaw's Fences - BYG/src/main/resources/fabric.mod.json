@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "z_mcwfencesbyg",
+  "version": "1.19.3-1.0",
+
+  "name": "Macaw's Fences - BYG",
+  "description": "Compatibility between Macaw's Fences and Oh The Biomes You'll Go for Minecraft 1.19.3 !",
+  "authors": [
+    "Samlegamer"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/macaws-fences-oh-the-biomes-youll-go",
+    "sources": "https://github.com/Samlegamer/Macaw-s-Fences-Compat/issues"
+  },
+
+  "license": "All rights reserved",
+  "icon": "assets/z_mcwfencesbyg/logo.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "fr.samlegamer.mcwfencesbyg.McwFencesBYG"
+    ],
+    "client": [
+      "fr.samlegamer.mcwfencesbyg.McwFencesBYGClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "fabric-api": "*",
+    "minecraft": "~1.19.3",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

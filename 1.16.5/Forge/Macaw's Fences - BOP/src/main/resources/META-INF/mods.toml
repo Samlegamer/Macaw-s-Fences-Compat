@@ -1,0 +1,42 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="All rights reserved"
+issueTrackerURL="https://github.com/Samlegamer/Macaw-s-Fences-Compat/issues"
+
+[[mods]]
+modId="mcwfencesbop"
+version="1.16.5-1.3"
+displayName="Macaw's Fences - BOP"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/macaws-fences-biomes-o-plenty"
+logoFile="img.png"
+credits="sketch_macaw"
+authors="Samlegamer"
+description='''
+Compatibility between Macaw's Fences and Biome O' Plenty for Minecraft 1.16.5 !
+'''
+
+[[dependencies.mcwfencesbop]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.mcwfencesbop]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.mcwfencesbop]]
+    modId = "mcwfences"
+    mandatory = false
+    ordering = "AFTER"
+    versionRange = "NONE"
+
+[[dependencies.mcwfencesbop]]
+    modId = "biomesoplenty"
+    mandatory = false
+    ordering = "AFTER"
+    versionRange = "NONE"

@@ -1,0 +1,4 @@
+{"parent": "mcwfences:block/parent/pyramid_gate_open",
+"textures":{"3": "byg:block/magic_log",
+"6": "byg:block/magic_planks",
+"particle": "byg:block/magic_planks"}}

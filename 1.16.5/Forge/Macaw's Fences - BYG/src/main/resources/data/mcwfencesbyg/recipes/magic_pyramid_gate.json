@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ACA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "B":
+        {
+            "item": "byg:magic_log"
+        },
+		
+		"C":
+        {
+            "item": "byg:magic_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfencesbyg:magic_pyramid_gate",
+        "count": 1
+    }
+}

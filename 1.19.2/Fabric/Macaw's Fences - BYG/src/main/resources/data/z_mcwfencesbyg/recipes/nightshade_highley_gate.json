@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "B":
+        {
+            "item": "byg:nightshade_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "z_mcwfencesbyg:nightshade_highley_gate",
+        "count": 1
+    }
+}

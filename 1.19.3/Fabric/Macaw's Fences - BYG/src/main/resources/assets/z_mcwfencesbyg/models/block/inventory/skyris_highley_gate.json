@@ -1,0 +1,4 @@
+{"parent":"mcwfences:block/parent/inventory/highley_gate",
+"textures":{"2": "byg:block/skyris/planks",
+"particle": "byg:block/skyris/log",
+"1_texture": "byg:block/skyris/log"}}

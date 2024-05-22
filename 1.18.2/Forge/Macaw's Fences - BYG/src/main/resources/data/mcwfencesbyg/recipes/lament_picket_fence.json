@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"CBC",
+		"CAC"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },  
+
+        "B":
+        {
+            "item": "byg:lament_planks"
+        },   		
+        
+        "C":
+        {
+            "item": "byg:lament_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfencesbyg:lament_picket_fence",
+        "count": 3
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "B":
+        {
+            "item": "biomesoplenty:dead_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfencesbop:dead_highley_gate",
+        "count": 1
+    }
+}

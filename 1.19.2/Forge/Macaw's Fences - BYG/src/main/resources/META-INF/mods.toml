@@ -1,0 +1,48 @@
+modLoader="javafml"
+loaderVersion="[43,)"
+license="All rights reserved"
+issueTrackerURL="https://github.com/Samlegamer/Macaw-s-Fences-Compat/issues"
+
+[[mods]]
+modId="mcwfencesbyg"
+version="1.19.2-1.0"
+displayName="Macaw's Fences - BYG"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/macaws-fences-oh-the-biomes-youll-go"
+logoFile="img.png"
+credits="sketch_macaw"
+authors="Samlegamer"
+displayTest="MATCH_VERSION"
+description='''
+Compatibility between Macaw's Fences and Oh The Biomes You'll Go for Minecraft 1.19.2 !
+'''
+[[dependencies.mcwfencesbyg]]
+    modId="forge"
+    mandatory=true
+    versionRange="[43,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.mcwfencesbyg]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.2,1.20)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.mcwfencesbyg]]
+    modId = "mcwfences"
+    mandatory = false
+    ordering = "AFTER"
+    versionRange = "NONE"
+
+[[dependencies.mcwfencesbyg]]
+    modId = "byg"
+    mandatory = false
+    ordering = "AFTER"
+    versionRange = "NONE"
+
+[[dependencies.mcwfencesbyg]]
+    modId = "terrablender"
+    mandatory = false
+    ordering = "AFTER"
+    versionRange = "NONE"

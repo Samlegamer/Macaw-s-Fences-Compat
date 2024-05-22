@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ACA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "B":
+        {
+            "item": "byg:lament_log"
+        },
+		
+		"C":
+        {
+            "item": "byg:lament_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfencesbyg:lament_pyramid_gate",
+        "count": 1
+    }
+}

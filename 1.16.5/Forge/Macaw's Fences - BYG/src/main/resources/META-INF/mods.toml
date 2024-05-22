@@ -1,0 +1,42 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="All rights reserved"
+issueTrackerURL="https://github.com/Samlegamer/Macaw-s-Fences-Compat/issues"
+
+[[mods]]
+modId="mcwfencesbyg"
+version="1.16.5-1.2"
+displayName="Macaw's Fences - BYG"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/macaws-fences-biomes-o-plenty"
+logoFile="img.png"
+credits="sketch_macaw"
+authors="Samlegamer"
+description='''
+Compatibility between Macaw's Fences and Oh The Biome You'll Go for Minecraft 1.16.5 !
+'''
+
+[[dependencies.mcwfencesbyg]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.mcwfencesbyg]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.mcwfencesbyg]]
+    modId = "mcwfences"
+    mandatory = false
+    ordering = "AFTER"
+    versionRange = "NONE"
+
+[[dependencies.mcwfencesbyg]]
+    modId = "byg"
+    mandatory = false
+    ordering = "AFTER"
+    versionRange = "NONE"

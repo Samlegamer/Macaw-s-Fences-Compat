@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "byg:bulbis_stem"
+        },    
+        
+        "B":
+        {
+            "item": "byg:bulbis_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfencesbyg:bulbis_stockade_fence",
+        "count": 3
+    }
+}

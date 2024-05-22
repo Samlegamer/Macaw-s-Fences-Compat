@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"CBC",
+		"CAC"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },  
+
+        "B":
+        {
+            "item": "biomesoplenty:umbran_planks"
+        },   		
+        
+        "C":
+        {
+            "item": "biomesoplenty:umbran_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfencesbop:umbran_picket_fence",
+        "count": 3
+    }
+}

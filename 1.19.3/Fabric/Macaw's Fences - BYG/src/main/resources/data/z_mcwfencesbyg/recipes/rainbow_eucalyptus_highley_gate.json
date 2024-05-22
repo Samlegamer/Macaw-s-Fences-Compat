@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "B":
+        {
+            "item": "byg:rainbow_eucalyptus_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "z_mcwfencesbyg:rainbow_eucalyptus_highley_gate",
+        "count": 1
+    }
+}

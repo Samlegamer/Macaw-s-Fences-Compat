@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "biomesoplenty:mahogany_log"
+        },    
+        
+        "B":
+        {
+            "item": "biomesoplenty:mahogany_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfencesbop:mahogany_stockade_fence",
+        "count": 3
+    }
+}

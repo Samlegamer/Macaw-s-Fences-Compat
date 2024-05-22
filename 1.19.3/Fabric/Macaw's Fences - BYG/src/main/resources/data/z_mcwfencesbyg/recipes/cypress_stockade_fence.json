@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "byg:cypress_log"
+        },    
+        
+        "B":
+        {
+            "item": "byg:cypress_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "z_mcwfencesbyg:cypress_stockade_fence",
+        "count": 3
+    }
+}

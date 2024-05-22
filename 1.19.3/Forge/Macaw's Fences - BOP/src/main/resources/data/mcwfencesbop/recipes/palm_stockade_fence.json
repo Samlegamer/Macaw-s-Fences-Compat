@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "biomesoplenty:palm_log"
+        },    
+        
+        "B":
+        {
+            "item": "biomesoplenty:palm_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfencesbop:palm_stockade_fence",
+        "count": 3
+    }
+}

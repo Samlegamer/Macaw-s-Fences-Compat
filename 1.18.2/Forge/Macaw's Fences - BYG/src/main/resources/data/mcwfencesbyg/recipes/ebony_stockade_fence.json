@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "byg:ebony_log"
+        },    
+        
+        "B":
+        {
+            "item": "byg:ebony_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfencesbyg:ebony_stockade_fence",
+        "count": 3
+    }
+}

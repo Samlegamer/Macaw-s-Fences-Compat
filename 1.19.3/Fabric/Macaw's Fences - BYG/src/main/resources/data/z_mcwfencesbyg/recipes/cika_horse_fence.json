@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "B":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "A":
+        {
+            "item": "byg:cika_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "z_mcwfencesbyg:cika_horse_fence",
+        "count": 3
+    }
+}

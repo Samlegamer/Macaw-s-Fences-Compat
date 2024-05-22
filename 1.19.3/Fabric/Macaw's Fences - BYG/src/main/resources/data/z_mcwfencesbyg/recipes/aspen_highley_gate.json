@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "B":
+        {
+            "item": "byg:aspen_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "z_mcwfencesbyg:aspen_highley_gate",
+        "count": 1
+    }
+}

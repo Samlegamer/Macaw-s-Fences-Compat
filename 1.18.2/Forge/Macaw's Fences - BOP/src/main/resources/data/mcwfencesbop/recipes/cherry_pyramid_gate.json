@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ACA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "B":
+        {
+            "item": "biomesoplenty:cherry_log"
+        },
+		
+		"C":
+        {
+            "item": "biomesoplenty:cherry_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfencesbop:cherry_pyramid_gate",
+        "count": 1
+    }
+}
