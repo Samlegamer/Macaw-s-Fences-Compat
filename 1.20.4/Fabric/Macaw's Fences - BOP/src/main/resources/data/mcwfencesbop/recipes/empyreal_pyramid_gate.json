@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ACA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "B":
+        {
+            "item": "biomesoplenty:empyreal_log"
+        },
+		
+		"C":
+        {
+            "item": "biomesoplenty:empyreal_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfencesbop:empyreal_pyramid_gate",
+        "count": 1
+    }
+}

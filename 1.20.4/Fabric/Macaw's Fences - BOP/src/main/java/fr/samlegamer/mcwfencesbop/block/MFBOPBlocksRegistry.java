@@ -76,9 +76,21 @@ public class MFBOPBlocksRegistry
     public static final Block willow_wired_fence = new WiredFence(AbstractBlock.Settings.create().strength(1.5F, 2.5F).sounds(BlockSoundGroup.WOOD));
     public static final Block willow_highley_gate = new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.create().nonOpaque().strength(1.5F, 2.5F).sounds(BlockSoundGroup.WOOD));
     public static final Block willow_pyramid_gate = new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.create().nonOpaque().strength(1.5F, 2.5F).sounds(BlockSoundGroup.WOOD));
+    public static final Block empyreal_picket_fence = new FenceBlock(AbstractBlock.Settings.create().strength(1.5F, 2.5F).sounds(BlockSoundGroup.WOOD));
+    public static final Block empyreal_stockade_fence = new FenceBlock(AbstractBlock.Settings.create().strength(1.5F, 2.5F).sounds(BlockSoundGroup.WOOD));
+    public static final Block empyreal_horse_fence = new FenceBlock(AbstractBlock.Settings.create().strength(1.5F, 2.5F).sounds(BlockSoundGroup.WOOD));
+    public static final Block empyreal_wired_fence = new WiredFence(AbstractBlock.Settings.create().strength(1.5F, 2.5F).sounds(BlockSoundGroup.WOOD));
+    public static final Block empyreal_highley_gate = new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.create().nonOpaque().strength(1.5F, 2.5F).sounds(BlockSoundGroup.WOOD));
+    public static final Block empyreal_pyramid_gate = new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.create().nonOpaque().strength(1.5F, 2.5F).sounds(BlockSoundGroup.WOOD));
 
     public static void registry()
 	{
+    	add("empyreal_picket_fence", empyreal_picket_fence);
+    	add("empyreal_stockade_fence", empyreal_stockade_fence);
+    	add("empyreal_horse_fence", empyreal_horse_fence);
+    	add("empyreal_wired_fence", empyreal_wired_fence);
+    	add("empyreal_highley_gate", empyreal_highley_gate);
+    	add("empyreal_pyramid_gate", empyreal_pyramid_gate);
     	add("dead_picket_fence", dead_picket_fence);
     	add("dead_stockade_fence", dead_stockade_fence);
     	add("dead_horse_fence", dead_horse_fence);

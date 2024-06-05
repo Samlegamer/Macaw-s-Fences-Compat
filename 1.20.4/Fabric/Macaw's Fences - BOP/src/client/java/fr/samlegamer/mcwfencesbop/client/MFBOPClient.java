@@ -20,5 +20,6 @@ public class MFBOPClient implements ClientModInitializer
 		BlockRenderLayerMap.INSTANCE.putBlock(MFBOPBlocksRegistry.redwood_wired_fence, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(MFBOPBlocksRegistry.umbran_wired_fence, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(MFBOPBlocksRegistry.willow_wired_fence, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(MFBOPBlocksRegistry.empyreal_wired_fence, RenderLayer.getCutout());
 	}
 }
