@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "mcwfencesbop",
-	"version": "1.20.4-1.1",
+	"version": "1.20.4-1.2",
 	"name": "Macaw's Fences - BOP",
 	"description": "Compatibility between Macaw's Fences and Biome O' Plenty for Minecraft Fabric 1.20.4 !",
 	"authors": [

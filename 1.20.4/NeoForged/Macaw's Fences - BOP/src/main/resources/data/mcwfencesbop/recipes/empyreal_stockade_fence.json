@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "biomesoplenty:empyreal_log"
+        },    
+        
+        "B":
+        {
+            "item": "biomesoplenty:empyreal_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfencesbop:empyreal_stockade_fence",
+        "count": 3
+    }
+}

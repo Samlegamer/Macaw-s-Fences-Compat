@@ -40,7 +40,7 @@ dependencies {
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-	modImplementation "curse.maven:macaws-fences-and-walls-453925:5121437"
+	modImplementation "curse.maven:macaws-fences-and-walls-453925:5442195"
 	modImplementation "curse.maven:biomes-o-plenty-220318:5197301"
 	modImplementation "curse.maven:terrablender-fabric-565956:5068224"
 

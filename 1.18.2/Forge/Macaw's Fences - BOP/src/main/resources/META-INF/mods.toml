@@ -1,3 +1,9 @@
+# This is an example mods.toml file. It contains the data relating to the loading mods.
+# There are several mandatory fields (#mandatory), and many more that are optional (#optional).
+# The overall format is standard TOML format, v0.5.0.
+# Note that there are a couple of TOML lists in this file.
+# Find more information on toml format here:  https://github.com/toml-lang/toml
+# The name of the mod loader type to load - for regular FML @Mod mods it should be javafml
 modLoader="javafml"
 loaderVersion="[40,)"
 license="All rights reserved"
@@ -5,7 +11,7 @@ issueTrackerURL="https://github.com/Samlegamer/Macaw-s-Fences-Compat/issues"
 
 [[mods]]
 modId="mcwfencesbop"
-version="1.18.2-1.4"
+version="1.18.2-1.5"
 displayName="Macaw's Fences - BOP"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/macaws-fences-biomes-o-plenty"
 logoFile="logo.png"
@@ -14,35 +20,23 @@ authors="Samlegamer"
 description='''
 Compatibility between Macaw's Fences and Biome O' Plenty for Minecraft 1.18.2 !
 '''
-
-[[dependencies.mcwfencesbop]]
-    modId="forge"
-    mandatory=true
-    versionRange="[40,)"
-    ordering="AFTER"
+# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+[[dependencies.mcwfencesbop]] #optional
+    # the modid of the dependency
+    modId="forge" #mandatory
+    # Does this dependency have to exist - if not, ordering below must be specified
+    mandatory=true #mandatory
+    # The version range of the dependency
+    versionRange="[40,)" #mandatory
+    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+    ordering="NONE"
+    # Side this dependency is applied on - BOTH, CLIENT or SERVER
     side="BOTH"
-
+# Here's another dependency
 [[dependencies.mcwfencesbop]]
     modId="minecraft"
     mandatory=true
+# This version range declares a minimum of the current minecraft version up to but not including the next major version
     versionRange="[1.18.2,1.19)"
-    ordering="AFTER"
+    ordering="NONE"
     side="BOTH"
-
-[[dependencies.mcwfencesbop]]
-    modId = "mcwfences"
-    mandatory = false
-    ordering = "AFTER"
-    versionRange = "NONE"
-
-[[dependencies.mcwfencesbop]]
-    modId = "biomesoplenty"
-    mandatory = false
-    ordering = "AFTER"
-    versionRange = "NONE"
-
-[[dependencies.mcwfencesbop]]
-    modId = "terrablender"
-    mandatory = false
-    ordering = "AFTER"
-    versionRange = "NONE"

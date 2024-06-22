@@ -1,0 +1,17 @@
+{
+  "type" : "minecraft:crafting_shaped",
+  "group" : "stockade",
+  "pattern" : [ "ABA", "ABA" ],
+  "key" : {
+    "A" : {
+      "item" : "biomesoplenty:magic_log"
+    },
+    "B" : {
+      "item" : "biomesoplenty:magic_planks"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwfencesbop:magic_stockade_fence"
+  }
+}

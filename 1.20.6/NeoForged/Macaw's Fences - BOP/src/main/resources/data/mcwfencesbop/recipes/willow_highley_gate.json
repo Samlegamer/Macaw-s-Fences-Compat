@@ -1,0 +1,17 @@
+{
+  "type" : "minecraft:crafting_shaped",
+  "group" : "highley",
+  "pattern" : [ "ABA", "ABA" ],
+  "key" : {
+    "A" : {
+      "item" : "minecraft:stick"
+    },
+    "B" : {
+      "item" : "biomesoplenty:willow_log"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwfencesbop:willow_highley_gate"
+  }
+}

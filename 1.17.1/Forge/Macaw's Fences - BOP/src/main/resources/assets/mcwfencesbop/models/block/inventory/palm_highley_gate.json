@@ -1,4 +1,10 @@
-{"parent":"mcwfences:block/parent/inventory/highley_gate",
-"textures":{"2": "biomesoplenty:block/palm_planks",
-"particle": "biomesoplenty:block/palm_log",
-"1_texture": "biomesoplenty:block/palm_log"}}
+
+	
+{
+	"parent": "mcwfences:block/parent/highley_gate",
+	"textures": {
+		"2": "biomesoplenty:block/palm_planks",
+		"particle": "biomesoplenty:block/palm_planks",
+		"texture": "biomesoplenty:block/palm_log"
+	}
+}

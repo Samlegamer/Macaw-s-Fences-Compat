@@ -1,0 +1,20 @@
+{
+  "type" : "minecraft:crafting_shaped",
+  "group" : "pyramid",
+  "pattern" : [ "ABA", "ACA" ],
+  "key" : {
+    "A" : {
+      "item" : "minecraft:stick"
+    },
+    "B" : {
+      "item" : "biomesoplenty:magic_log"
+    },
+    "C" : {
+      "item" : "biomesoplenty:magic_planks"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwfencesbop:magic_pyramid_gate"
+  }
+}

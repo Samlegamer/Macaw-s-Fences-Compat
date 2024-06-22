@@ -1,0 +1,8 @@
+Folder name changes
+
+tags/
+     blocks -> block
+     items -> item
+loot_tables/ - > loot_table
+
+recipes/ -> recipe

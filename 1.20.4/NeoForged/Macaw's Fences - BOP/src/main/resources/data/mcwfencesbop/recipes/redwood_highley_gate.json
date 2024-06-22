@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "B":
+        {
+            "item": "biomesoplenty:redwood_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfencesbop:redwood_highley_gate",
+        "count": 1
+    }
+}

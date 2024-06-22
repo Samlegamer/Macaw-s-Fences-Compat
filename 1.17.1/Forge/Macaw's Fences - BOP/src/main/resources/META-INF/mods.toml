@@ -5,27 +5,32 @@ issueTrackerURL="https://github.com/Samlegamer/Macaw-s-Fences-Compat/issues"
 
 [[mods]]
 modId="mcwfencesbop"
-version="1.17.1-1.0"
+version="1.17.1-1.1"
 displayName="Macaw's Fences - BOP"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/macaws-fences-biomes-o-plenty"
 logoFile="logo.png"
 credits="sketch_macaw"
 authors="Samlegamer"
-#displayTest="MATCH_VERSION"
 description='''
 Compatibility between Macaw's Fences and Biome O' Plenty for Minecraft 1.17.1 !
 '''
-
-[[dependencies.mcwfencesbop]]
-    modId="forge"
-    mandatory=true
-    versionRange="[37,)"
+# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+[[dependencies.mcwfencesbop]] #optional
+    # the modid of the dependency
+    modId="forge" #mandatory
+    # Does this dependency have to exist - if not, ordering below must be specified
+    mandatory=true #mandatory
+    # The version range of the dependency
+    versionRange="[37,)" #mandatory
+    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
     ordering="NONE"
+    # Side this dependency is applied on - BOTH, CLIENT or SERVER
     side="BOTH"
-
+# Here's another dependency
 [[dependencies.mcwfencesbop]]
     modId="minecraft"
     mandatory=true
+# This version range declares a minimum of the current minecraft version up to but not including the next major version
     versionRange="[1.17.1,1.18)"
     ordering="NONE"
     side="BOTH"

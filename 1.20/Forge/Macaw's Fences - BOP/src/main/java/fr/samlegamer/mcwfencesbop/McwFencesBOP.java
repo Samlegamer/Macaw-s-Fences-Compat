@@ -31,7 +31,7 @@ public class McwFencesBOP
         LOGGER.info("Macaw's Fences - Biome O' Plenty : Is Charged");
     }
 	
-    void client(FMLClientSetupEvent event)
+    private void client(FMLClientSetupEvent event)
 	{    	
     	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.dead_picket_fence.get(), RenderType.cutout());
     	ItemBlockRenderTypes.setRenderLayer(MFBOPBlocksRegistry.dead_stockade_fence.get(), RenderType.cutout());
