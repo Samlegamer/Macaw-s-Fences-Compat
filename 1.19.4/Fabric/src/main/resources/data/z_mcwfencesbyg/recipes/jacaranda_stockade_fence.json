@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "byg:jacaranda_log"
+        },    
+        
+        "B":
+        {
+            "item": "byg:jacaranda_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "z_mcwfencesbyg:jacaranda_stockade_fence",
+        "count": 3
+    }
+}

@@ -21,8 +21,8 @@ public class MFBYGBlocksRegistry
 	public static final Block aspen_stockade_fence = new FenceBlock(AbstractBlock.Settings.of(Material.WOOD).strength(1.5F, 2.5F).sounds(BlockSoundGroup.WOOD));
 	public static final Block aspen_horse_fence = new FenceBlock(AbstractBlock.Settings.of(Material.WOOD).strength(1.5F, 2.5F).sounds(BlockSoundGroup.WOOD));
 	public static final Block aspen_wired_fence = new WiredFence(AbstractBlock.Settings.of(Material.WOOD).strength(1.5F, 2.5F).sounds(BlockSoundGroup.WOOD));
-	public static final Block aspen_highley_gate = new FenceGateBlock(AbstractBlock.Settings.of(Material.WOOD).nonOpaque().strength(1.5F, 2.5F).sounds(BlockSoundGroup.WOOD), null, null);
-	public static final Block aspen_pyramid_gate = new FenceGateBlock(AbstractBlock.Settings.of(Material.WOOD).nonOpaque().strength(1.5F, 2.5F).sounds(BlockSoundGroup.WOOD), null, null);
+	public static final Block aspen_highley_gate = new FenceGateBlock(AbstractBlock.Settings.of(Material.WOOD).nonOpaque().strength(1.5F, 2.5F).sounds(BlockSoundGroup.WOOD), SoundEvents.BLOCK_FENCE_GATE_CLOSE, SoundEvents.BLOCK_FENCE_GATE_OPEN);
+	public static final Block aspen_pyramid_gate = new FenceGateBlock(AbstractBlock.Settings.of(Material.WOOD).nonOpaque().strength(1.5F, 2.5F).sounds(BlockSoundGroup.WOOD), SoundEvents.BLOCK_FENCE_GATE_CLOSE, SoundEvents.BLOCK_FENCE_GATE_OPEN);
 	public static final Block baobab_picket_fence = new FenceBlock(AbstractBlock.Settings.of(Material.WOOD).strength(1.5F, 2.5F).sounds(BlockSoundGroup.WOOD));
 	public static final Block baobab_stockade_fence = new FenceBlock(AbstractBlock.Settings.of(Material.WOOD).strength(1.5F, 2.5F).sounds(BlockSoundGroup.WOOD));
 	public static final Block baobab_horse_fence = new FenceBlock(AbstractBlock.Settings.of(Material.WOOD).strength(1.5F, 2.5F).sounds(BlockSoundGroup.WOOD));

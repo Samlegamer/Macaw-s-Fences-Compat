@@ -24,7 +24,7 @@ dependencies {
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 	modImplementation "curse.maven:terrablender-fabric-565956:4420864"
-	modImplementation "curse.maven:macaws-fences-and-walls-453925:4358538"
+	modImplementation "curse.maven:macaws-fences-and-walls-453925:5442188"
 	modImplementation "curse.maven:oh-the-biomes-youll-go-fabric-391378:4586045"
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"

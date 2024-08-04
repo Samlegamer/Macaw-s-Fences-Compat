@@ -34,7 +34,7 @@ public class McwFencesBYG
         LOGGER.info("Macaw's Fences - Oh The Biomes You'll Go : Is Charged");
     }
 	
-    void client(FMLClientSetupEvent event)
+    private void client(FMLClientSetupEvent event)
 	{
     	ItemBlockRenderTypes.setRenderLayer(MFBYGBlocksRegistry.aspen_picket_fence.get(), RenderType.cutout());
     	ItemBlockRenderTypes.setRenderLayer(MFBYGBlocksRegistry.aspen_stockade_fence.get(), RenderType.cutout());

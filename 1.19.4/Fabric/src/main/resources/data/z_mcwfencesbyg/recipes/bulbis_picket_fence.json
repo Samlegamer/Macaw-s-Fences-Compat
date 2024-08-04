@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"CBC",
+		"CAC"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },  
+
+        "B":
+        {
+            "item": "byg:bulbis_planks"
+        },   		
+        
+        "C":
+        {
+            "item": "byg:bulbis_stem"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "z_mcwfencesbyg:bulbis_picket_fence",
+        "count": 3
+    }
+}

@@ -6,8 +6,6 @@ import com.google.common.base.Supplier;
 import com.mcwfences.kikoz.objects.FuelItemBlock;
 import com.mcwfences.kikoz.objects.WiredFence;
 import fr.samlegamer.mcwfencesbyg.McwFencesBYG;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
-import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.FenceBlock;
