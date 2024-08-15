@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+	"group": "pillarwall",
+    
+    "pattern":
+    [
+		"AAA",
+		"B B"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:smooth_sandstone"
+        },    
+        
+        "B":
+        {
+            "item": "biomeswevegone:blue_sandstone"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfencesbyg:blue_sandstone_pillar_wall",
+        "count": 5
+    }
+}
+
+

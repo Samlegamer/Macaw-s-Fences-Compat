@@ -32,6 +32,7 @@ public class McwFencesBYG
 	
     private void client(FMLClientSetupEvent event)
 	{
+    	/*
     	RenderTypeLookup.setRenderLayer(MFBYGBlocksRegistry.aspen_picket_fence.get(), RenderType.cutout());
     	RenderTypeLookup.setRenderLayer(MFBYGBlocksRegistry.aspen_stockade_fence.get(), RenderType.cutout());
     	RenderTypeLookup.setRenderLayer(MFBYGBlocksRegistry.aspen_horse_fence.get(), RenderType.cutout());
@@ -45,7 +46,7 @@ public class McwFencesBYG
     		RenderTypeLookup.setRenderLayer(MFBYGBlocksRegistry.horse_fenceAll.get(), RenderType.cutout());
     		RenderTypeLookup.setRenderLayer(MFBYGBlocksRegistry.wired_fenceAll.get(), RenderType.cutout());
     		RenderTypeLookup.setRenderLayer(MFBYGBlocksRegistry.highley_gateAll.get(), RenderType.cutout());
-    	}
+    	}*/
 	}
 	
 	private static class TabsMFBOP extends ItemGroup

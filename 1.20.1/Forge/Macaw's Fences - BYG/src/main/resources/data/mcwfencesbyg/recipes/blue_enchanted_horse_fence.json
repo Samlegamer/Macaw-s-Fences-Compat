@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+	"group": "horse",
+    
+    "pattern":
+    [
+		"ABA",
+		"BAB"
+    ],
+    
+    "key":
+    { 
+        "B":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "A":
+        {
+            "item": "biomeswevegone:blue_enchanted_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfencesbyg:blue_enchanted_horse_fence",
+        "count": 3
+    }
+}
+
+

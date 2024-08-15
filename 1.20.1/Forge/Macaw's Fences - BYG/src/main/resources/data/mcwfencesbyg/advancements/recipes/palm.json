@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfencesbyg:palm_picket_fence",
+	  "mcwfencesbyg:palm_stockade_fence",
+	  "mcwfencesbyg:palm_horse_fence",
+	  "mcwfencesbyg:palm_wired_fence",
+	  "mcwfencesbyg:palm_highley_gate",
+	  "mcwfencesbyg:palm_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "biomeswevegone:palm_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

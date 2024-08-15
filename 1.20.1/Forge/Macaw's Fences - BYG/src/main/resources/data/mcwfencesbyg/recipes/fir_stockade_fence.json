@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+	"group": "stockade",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "biomeswevegone:fir_log"
+        },    
+        
+        "B":
+        {
+            "item": "biomeswevegone:fir_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfencesbyg:fir_stockade_fence",
+        "count": 3
+    }
+}
+
+

@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfencesbyg:sakura_picket_fence",
+	  "mcwfencesbyg:sakura_stockade_fence",
+	  "mcwfencesbyg:sakura_horse_fence",
+	  "mcwfencesbyg:sakura_wired_fence",
+	  "mcwfencesbyg:sakura_highley_gate",
+	  "mcwfencesbyg:sakura_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "biomeswevegone:sakura_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

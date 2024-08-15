@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfencesbyg:zelkova_picket_fence",
+	  "mcwfencesbyg:zelkova_stockade_fence",
+	  "mcwfencesbyg:zelkova_horse_fence",
+	  "mcwfencesbyg:zelkova_wired_fence",
+	  "mcwfencesbyg:zelkova_highley_gate",
+	  "mcwfencesbyg:zelkova_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "biomeswevegone:zelkova_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

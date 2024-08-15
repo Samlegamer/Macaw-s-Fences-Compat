@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfencesbyg:ironwood_picket_fence",
+	  "mcwfencesbyg:ironwood_stockade_fence",
+	  "mcwfencesbyg:ironwood_horse_fence",
+	  "mcwfencesbyg:ironwood_wired_fence",
+	  "mcwfencesbyg:ironwood_highley_gate",
+	  "mcwfencesbyg:ironwood_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "biomeswevegone:ironwood_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

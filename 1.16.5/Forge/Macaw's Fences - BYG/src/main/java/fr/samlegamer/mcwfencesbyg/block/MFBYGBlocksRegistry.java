@@ -9,6 +9,7 @@ import com.mcwfences.kikoz.objects.WiredFence;
 import fr.samlegamer.mcwfencesbyg.McwFencesBYG;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.FenceBlock;
 import net.minecraft.block.FenceGateBlock;
 import net.minecraft.block.SoundType;
@@ -23,6 +24,10 @@ public class MFBYGBlocksRegistry
 {
 	public static final DeferredRegister<Block> BLOCKS_REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, McwFencesBYG.MODID);    
 	public static final DeferredRegister<Item> ITEMS_REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, McwFencesBYG.MODID);
+
+	
+	private static final AbstractBlock.Properties STONE = AbstractBlock.Properties.copy(Blocks.SANDSTONE);
+	
 	
 	public static final RegistryObject<Block> aspen_picket_fence = createBlock("aspen_picket_fence", () -> new FenceBlock(AbstractBlock.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)));
 	public static final RegistryObject<Block> aspen_stockade_fence = createBlock("aspen_stockade_fence", () -> new FenceBlock(AbstractBlock.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)));

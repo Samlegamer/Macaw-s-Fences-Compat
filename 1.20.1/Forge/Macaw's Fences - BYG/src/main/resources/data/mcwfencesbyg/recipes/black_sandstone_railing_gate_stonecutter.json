@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "biomeswevegone:black_sandstone"
+    },
+    "result": "mcwfencesbyg:black_sandstone_railing_gate",
+    "group": "fences",
+    "count": 1
+}
