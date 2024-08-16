@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "biomeswevegone:pink_sandstone"
+    },
+    "result": "mcwfences:modern_sandstone_wall",
+    "group": "fences",
+    "count": 1
+}

@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfences:modern_sandstone_wall",
+	  "mcwfences:modern_red_sandstone_wall",
+	  "mcwfences:railing_sandstone_wall",
+	  "mcwfences:railing_red_sandstone_wall",
+	  "z_mcwfencesbyg:dacite_bricks_railing_gate",
+	  "mcwfences:red_sandstone_railing_gate",
+	  "z_mcwfencesbyg:dacite_bricks_pillar_wall",
+	  "mcwfences:red_sandstone_pillar_wall",
+	  "mcwfences:red_sandstone_grass_topped_wall",
+	  "z_mcwfencesbyg:dacite_bricks_grass_topped_wall"
+    ]
+  },
+  "criteria": {
+    "has_sand": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:sand"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_sand"
+    ]
+  ]
+}

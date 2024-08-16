@@ -1,0 +1,8 @@
+{
+	"parent": "mcwfences:block/parent/pillar_wall_post",
+	"textures": {
+		"particle": "biomeswevegone:block/red_rock_bricks",
+		"1": "biomeswevegone:block/red_rock_bricks",
+		"wall": "biomeswevegone:block/red_rock_bricks"
+	}
+}

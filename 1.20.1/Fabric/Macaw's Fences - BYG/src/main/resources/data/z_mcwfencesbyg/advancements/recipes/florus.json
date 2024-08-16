@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "z_mcwfencesbyg:florus_picket_fence",
+	  "z_mcwfencesbyg:florus_stockade_fence",
+	  "z_mcwfencesbyg:florus_horse_fence",
+	  "z_mcwfencesbyg:florus_wired_fence",
+	  "z_mcwfencesbyg:florus_highley_gate",
+	  "z_mcwfencesbyg:florus_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "biomeswevegone:florus_stem"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

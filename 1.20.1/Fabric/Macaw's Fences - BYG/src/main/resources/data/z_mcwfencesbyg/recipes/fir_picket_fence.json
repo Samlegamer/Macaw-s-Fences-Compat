@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shaped",
+	"group": "picket",
+    
+    "pattern":
+    [
+		"CBC",
+		"CAC"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },  
+
+        "B":
+        {
+            "item": "biomeswevegone:fir_planks"
+        },   		
+        
+        "C":
+        {
+            "item": "biomeswevegone:fir_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "z_mcwfencesbyg:fir_picket_fence",
+        "count": 3
+    }
+}
+
+

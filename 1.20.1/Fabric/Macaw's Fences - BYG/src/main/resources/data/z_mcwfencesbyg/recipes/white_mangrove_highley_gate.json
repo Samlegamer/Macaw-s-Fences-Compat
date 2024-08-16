@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+	"group": "highley",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "B":
+        {
+            "item": "biomeswevegone:white_mangrove_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "z_mcwfencesbyg:white_mangrove_highley_gate",
+        "count": 1
+    }
+}
+
+

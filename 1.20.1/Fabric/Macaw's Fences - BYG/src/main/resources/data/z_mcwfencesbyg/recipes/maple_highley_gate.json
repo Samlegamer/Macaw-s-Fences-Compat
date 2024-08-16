@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+	"group": "highley",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "B":
+        {
+            "item": "biomeswevegone:maple_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "z_mcwfencesbyg:maple_highley_gate",
+        "count": 1
+    }
+}
+
+
