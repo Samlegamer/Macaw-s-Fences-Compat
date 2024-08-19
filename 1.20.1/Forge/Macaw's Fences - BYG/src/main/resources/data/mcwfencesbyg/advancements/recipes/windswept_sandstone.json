@@ -2,15 +2,15 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-	  "mcwfences:modern_sandstone_wall",
-	  "mcwfences:modern_red_sandstone_wall",
-	  "mcwfences:railing_sandstone_wall",
-	  "mcwfences:railing_red_sandstone_wall",
+	  "mcwfencesbyg:modern_windswept_sandstone_wall",
+	  
+	  "mcwfencesbyg:railing_windswept_sandstone_wall",
+	  
 	  "mcwfencesbyg:windswept_sandstone_railing_gate",
-	  "mcwfences:red_sandstone_railing_gate",
+	  
 	  "mcwfencesbyg:windswept_sandstone_pillar_wall",
-	  "mcwfences:red_sandstone_pillar_wall",
-	  "mcwfences:red_sandstone_grass_topped_wall",
+	  
+	  
 	  "mcwfencesbyg:windswept_sandstone_grass_topped_wall"
     ]
   },
@@ -20,7 +20,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:sand"
+            "item": "biomeswevegone:windswept_sandstone"
           }
         ]
       }

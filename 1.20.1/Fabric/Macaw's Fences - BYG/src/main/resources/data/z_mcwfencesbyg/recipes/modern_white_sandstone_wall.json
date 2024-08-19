@@ -12,7 +12,7 @@
     { 
         "A":
         {
-            "item": "minecraft:smooth_sandstone"
+            "item": "biomeswevegone:smooth_white_sandstone"
         },    
         
         "B":
@@ -23,7 +23,7 @@
     
     "result":
     {
-        "item":  "mcwfences:modern_sandstone_wall",
+        "item":  "z_mcwfencesbyg:modern_white_sandstone_wall",
         "count": 6
     }
 }

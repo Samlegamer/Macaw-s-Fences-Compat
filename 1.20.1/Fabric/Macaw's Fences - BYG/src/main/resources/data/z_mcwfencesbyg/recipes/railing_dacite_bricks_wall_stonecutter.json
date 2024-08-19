@@ -3,7 +3,7 @@
     "ingredient": {
         "item": "biomeswevegone:dacite_bricks"
     },
-    "result": "mcwfences:railing_sandstone_wall",
+    "result": "z_mcwfencesbyg:railing_dacite_bricks_wall",
     "group": "fences",
     "count": 1
 }

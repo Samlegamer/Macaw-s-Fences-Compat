@@ -3,7 +3,7 @@
     "ingredient": {
         "item": "biomeswevegone:red_rock_bricks"
     },
-    "result": "mcwfences:modern_sandstone_wall",
+    "result": "z_mcwfencesbyg:modern_red_rock_bricks_wall",
     "group": "fences",
     "count": 1
 }

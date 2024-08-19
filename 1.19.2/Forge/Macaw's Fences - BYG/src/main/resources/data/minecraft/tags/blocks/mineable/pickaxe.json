@@ -1,0 +1,30 @@
+{
+  "replace": false,
+  "values": [
+"mcwfencesbyg:modern_soapstone_wall",
+"mcwfencesbyg:railing_soapstone_wall",
+"mcwfencesbyg:soapstone_railing_gate",
+"mcwfencesbyg:soapstone_pillar_wall",
+"mcwfencesbyg:soapstone_grass_topped_wall",
+"mcwfencesbyg:modern_travertine_wall",
+"mcwfencesbyg:railing_travertine_wall",
+"mcwfencesbyg:travertine_railing_gate",
+"mcwfencesbyg:travertine_pillar_wall",
+"mcwfencesbyg:travertine_grass_topped_wall",
+"mcwfencesbyg:modern_dacite_wall",
+"mcwfencesbyg:railing_dacite_wall",
+"mcwfencesbyg:dacite_railing_gate",
+"mcwfencesbyg:dacite_pillar_wall",
+"mcwfencesbyg:dacite_grass_topped_wall",
+"mcwfencesbyg:modern_red_rock_wall",
+"mcwfencesbyg:railing_red_rock_wall",
+"mcwfencesbyg:red_rock_railing_gate",
+"mcwfencesbyg:red_rock_pillar_wall",
+"mcwfencesbyg:red_rock_grass_topped_wall",
+"mcwfencesbyg:modern_scoria_stone_wall",
+"mcwfencesbyg:railing_scoria_stone_wall",
+"mcwfencesbyg:scoria_stone_railing_gate",
+"mcwfencesbyg:scoria_stone_pillar_wall",
+"mcwfencesbyg:scoria_stone_grass_topped_wall"
+  ]
+}

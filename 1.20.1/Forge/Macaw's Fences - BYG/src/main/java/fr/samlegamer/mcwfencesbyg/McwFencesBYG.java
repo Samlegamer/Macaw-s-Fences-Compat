@@ -5,10 +5,10 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.FoliageColor;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.client.event.RegisterColorHandlersEvent;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
@@ -24,24 +24,21 @@ public class McwFencesBYG
     
     public McwFencesBYG()
     {
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::AddTab);
-
-	// check if this is on client or server
-	// NEVER use @onlyin(Dist.CLIENT) tags in mod code
-	Level level = pContext.getLevel();
-	if (level.isClientSide){
-        	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::colorsBlock);
-        	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::colorsItem);
-	}
-	    
         LOGGER.info("Macaw's Fences - Oh The Biomes We've Gone : Loading ...");
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::AddTab);
+        DistExecutor.safeRunWhenOn(Dist.CLIENT, ()-> ()-> initClient(bus));
 		MFBYGBlocksRegistry.ITEMS_REGISTRY.register(bus);
 		MFBYGBlocksRegistry.BLOCKS_REGISTRY.register(bus);
 		MFBYGBlocksRegistry.Item_Group.register(bus);
         LOGGER.info("Macaw's Fences - Oh The Biomes We've Gone : Is Charged");
     }
     
+    private void initClient(IEventBus bus)
+    {
+    	bus.addListener(this::colorsBlock);
+    	bus.addListener(this::colorsItem);
+    }
     
     private void colorsBlock(RegisterColorHandlersEvent.Block e)
     {

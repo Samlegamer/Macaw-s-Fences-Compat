@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "mcwfences:railing_sandstone_wall"
+          "name": "mcwfencesbyg:railing_red_rock_bricks_wall"
         }
       ],
       "conditions": [

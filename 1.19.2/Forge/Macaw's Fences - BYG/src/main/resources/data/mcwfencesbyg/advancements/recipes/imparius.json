@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfencesbyg:imparius_picket_fence",
+	  "mcwfencesbyg:imparius_stockade_fence",
+	  "mcwfencesbyg:imparius_horse_fence",
+	  "mcwfencesbyg:imparius_wired_fence",
+	  "mcwfencesbyg:imparius_highley_gate",
+	  "mcwfencesbyg:imparius_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "byg:imparius_stem"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

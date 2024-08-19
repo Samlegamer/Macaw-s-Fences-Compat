@@ -68,7 +68,8 @@ minecraft {
             // "REGISTRIES": For firing of registry events.
             // "REGISTRYDUMP": For getting the contents of all registries.
             property 'forge.logging.markers', 'REGISTRIES'
-
+			property 'mixin.env.remapRefMap', 'true'
+			property 'mixin.env.refMapRemappingFile',"${buildDir}/createSrgToMcp/output.srg"
             // Recommended logging level for the console
             // You can set various levels here.
             // Please read: https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels
@@ -133,9 +134,12 @@ dependencies {
     // If the group id is "net.minecraft" and the artifact id is one of ["client", "server", "joined"],
     // then special handling is done to allow a setup of a vanilla dependency without the use of an external repository.
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
-	implementation fg.deobf("curse.maven:oh-the-biomes-youll-go-247560:3953421")
- 	implementation fg.deobf("curse.maven:macaws-fences-and-walls-453925:5442213")
- 	implementation fg.deobf("curse.maven:terrablender-563928:3926355")
+    implementation fg.deobf("curse.maven:macaws-fences-and-walls-453925:5442213")
+    implementation fg.deobf("curse.maven:oh-the-biomes-youll-go-247560:5116293")
+    implementation fg.deobf("curse.maven:terrablender-563928:4618490")
+    implementation fg.deobf("curse.maven:corgilib-693313:4554111")
+    implementation fg.deobf("curse.maven:geckolib-388172:4407241")
+    implementation fg.deobf("curse.maven:jei-238222:5543121")
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency
     // runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}") // Adds the full JEI mod as a runtime dependency

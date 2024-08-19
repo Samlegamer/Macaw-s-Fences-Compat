@@ -12,7 +12,7 @@
     { 
         "A":
         {
-            "item": "minecraft:smooth_sandstone"
+            "item": "biomeswevegone:red_rock"
         },    
         
         "B":
@@ -23,7 +23,7 @@
     
     "result":
     {
-        "item":  "mcwfences:railing_sandstone_wall",
+        "item":  "mcwfencesbyg:railing_red_rock_bricks_wall",
         "count": 6
     }
 }

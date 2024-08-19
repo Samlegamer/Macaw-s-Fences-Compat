@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "mcwfences:modern_sandstone_wall"
+          "name": "mcwfencesbyg:modern_red_rock_bricks_wall"
         }
       ],
       "conditions": [

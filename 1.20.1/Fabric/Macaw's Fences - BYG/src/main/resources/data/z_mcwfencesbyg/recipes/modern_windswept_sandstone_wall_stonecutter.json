@@ -3,7 +3,7 @@
     "ingredient": {
         "item": "biomeswevegone:windswept_sandstone"
     },
-    "result": "mcwfences:modern_sandstone_wall",
+    "result": "z_mcwfencesbyg:modern_windswept_sandstone_wall",
     "group": "fences",
     "count": 1
 }

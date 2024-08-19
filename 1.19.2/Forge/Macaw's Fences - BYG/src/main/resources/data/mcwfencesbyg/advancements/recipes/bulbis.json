@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfencesbyg:bulbis_picket_fence",
+	  "mcwfencesbyg:bulbis_stockade_fence",
+	  "mcwfencesbyg:bulbis_horse_fence",
+	  "mcwfencesbyg:bulbis_wired_fence",
+	  "mcwfencesbyg:bulbis_highley_gate",
+	  "mcwfencesbyg:bulbis_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "byg:bulbis_stem"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}
