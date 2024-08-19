@@ -25,8 +25,15 @@ public class McwFencesBYG
     public McwFencesBYG()
     {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::AddTab);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::colorsBlock);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::colorsItem);
+
+	// check if this is on client or server
+	// NEVER use @onlyin(Dist.CLIENT) tags in mod code
+	Level level = pContext.getLevel();
+	if (level.isClientSide){
+        	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::colorsBlock);
+        	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::colorsItem);
+	}
+	    
         LOGGER.info("Macaw's Fences - Oh The Biomes We've Gone : Loading ...");
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		MFBYGBlocksRegistry.ITEMS_REGISTRY.register(bus);
@@ -36,7 +43,6 @@ public class McwFencesBYG
     }
     
     
-    @OnlyIn(Dist.CLIENT)
     private void colorsBlock(RegisterColorHandlersEvent.Block e)
     {
     	/*
@@ -50,7 +56,6 @@ public class McwFencesBYG
     }
     
 
-    @OnlyIn(Dist.CLIENT)
     private void colorsItem(RegisterColorHandlersEvent.Item e)
     {
     	/*
