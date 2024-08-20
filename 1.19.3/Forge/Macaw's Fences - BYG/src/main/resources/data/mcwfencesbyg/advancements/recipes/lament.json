@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfencesbyg:lament_picket_fence",
+	  "mcwfencesbyg:lament_stockade_fence",
+	  "mcwfencesbyg:lament_horse_fence",
+	  "mcwfencesbyg:lament_wired_fence",
+	  "mcwfencesbyg:lament_highley_gate",
+	  "mcwfencesbyg:lament_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "byg:lament_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}
