@@ -1,8 +1,0 @@
-{
-	"parent": "mcwfences:block/parent/pyramid_gate_open",
-	"textures": {
-		"3": "byg:blockmangrove/log",
-		"6": "byg:blockmangrove/planks",
-		"particle": "byg:blockmangrove/planks"
-	}
-}

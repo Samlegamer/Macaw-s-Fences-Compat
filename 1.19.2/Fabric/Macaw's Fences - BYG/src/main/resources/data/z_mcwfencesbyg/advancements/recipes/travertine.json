@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "z_mcwfencesbyg:modern_travertine_wall",
+	  
+	  "z_mcwfencesbyg:railing_travertine_wall",
+	  
+	  "z_mcwfencesbyg:travertine_railing_gate",
+	  
+	  "z_mcwfencesbyg:travertine_pillar_wall",
+	  
+	  
+	  "z_mcwfencesbyg:travertine_grass_topped_wall"
+    ]
+  },
+  "criteria": {
+    "has_sand": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "byg:travertine"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_sand"
+    ]
+  ]
+}

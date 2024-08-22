@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "z_mcwfencesbyg:modern_dacite_wall",
+	  
+	  "z_mcwfencesbyg:railing_dacite_wall",
+	  
+	  "z_mcwfencesbyg:dacite_railing_gate",
+	  
+	  "z_mcwfencesbyg:dacite_pillar_wall",
+	  
+	  
+	  "z_mcwfencesbyg:dacite_grass_topped_wall"
+    ]
+  },
+  "criteria": {
+    "has_sand": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "byg:dacite"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_sand"
+    ]
+  ]
+}

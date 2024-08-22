@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "z_mcwfencesbyg:baobab_picket_fence",
+	  "z_mcwfencesbyg:baobab_stockade_fence",
+	  "z_mcwfencesbyg:baobab_horse_fence",
+	  "z_mcwfencesbyg:baobab_wired_fence",
+	  "z_mcwfencesbyg:baobab_highley_gate",
+	  "z_mcwfencesbyg:baobab_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "byg:baobab_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

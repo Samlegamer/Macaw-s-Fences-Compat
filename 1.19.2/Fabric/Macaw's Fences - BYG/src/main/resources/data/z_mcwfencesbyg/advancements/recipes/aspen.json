@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "z_mcwfencesbyg:aspen_picket_fence",
+	  "z_mcwfencesbyg:aspen_stockade_fence",
+	  "z_mcwfencesbyg:aspen_horse_fence",
+	  "z_mcwfencesbyg:aspen_wired_fence",
+	  "z_mcwfencesbyg:aspen_highley_gate",
+	  "z_mcwfencesbyg:aspen_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "byg:aspen_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

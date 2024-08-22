@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "byg:scoria_stone"
+    },
+    "result": "mcwfencesbyg:scoria_stone_railing_gate",
+    "group": "fences",
+    "count": 1
+}

@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "z_mcwfencesbyg:witch_hazel_picket_fence",
+	  "z_mcwfencesbyg:witch_hazel_stockade_fence",
+	  "z_mcwfencesbyg:witch_hazel_horse_fence",
+	  "z_mcwfencesbyg:witch_hazel_wired_fence",
+	  "z_mcwfencesbyg:witch_hazel_highley_gate",
+	  "z_mcwfencesbyg:witch_hazel_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "byg:witch_hazel_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

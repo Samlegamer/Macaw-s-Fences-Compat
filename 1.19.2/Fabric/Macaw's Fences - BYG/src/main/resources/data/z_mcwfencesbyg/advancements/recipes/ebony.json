@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "z_mcwfencesbyg:ebony_picket_fence",
+	  "z_mcwfencesbyg:ebony_stockade_fence",
+	  "z_mcwfencesbyg:ebony_horse_fence",
+	  "z_mcwfencesbyg:ebony_wired_fence",
+	  "z_mcwfencesbyg:ebony_highley_gate",
+	  "z_mcwfencesbyg:ebony_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "byg:ebony_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

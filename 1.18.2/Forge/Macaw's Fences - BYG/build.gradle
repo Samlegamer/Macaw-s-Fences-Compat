@@ -16,7 +16,7 @@ plugins {
 apply plugin: 'net.minecraftforge.gradle'
 
 
-version = '1.18.2-1.4'
+version = '1.18.2-1.5'
 group = 'fr.samlegamer.mcwfencesbyg'
 archivesBaseName = 'mcwfencesbyg'
 
@@ -54,7 +54,8 @@ minecraft {
             // "REGISTRIES": For firing of registry events.
             // "REGISTRYDUMP": For getting the contents of all registries.
             property 'forge.logging.markers', 'REGISTRIES'
-
+			property 'mixin.env.remapRefMap', 'true'
+			property 'mixin.env.refMapRemappingFile',"${buildDir}/createSrgToMcp/output.srg"
             // Recommended logging level for the console
             // You can set various levels here.
             // Please read: https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels
@@ -153,10 +154,10 @@ dependencies {
     // Specify the version of Minecraft to use. If this is any group other than 'net.minecraft', it is assumed
     // that the dep is a ForgeGradle 'patcher' dependency, and its patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
-    minecraft 'net.minecraftforge:forge:1.18.2-40.2.0'
-	implementation fg.deobf("curse.maven:macaws-fences-and-walls-453925:5442210")
-	implementation fg.deobf("curse.maven:oh-the-biomes-youll-go-247560:3681712")
-	implementation fg.deobf("curse.maven:terrablender-563928:3681688")
+    minecraft 'net.minecraftforge:forge:1.18.2-40.2.21'
+    implementation fg.deobf("curse.maven:oh-the-biomes-youll-go-247560:4971536")
+    implementation fg.deobf("curse.maven:terrablender-563928:3957976")
+    implementation fg.deobf("curse.maven:macaws-fences-and-walls-453925:5442210")
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency
     // runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}") // Adds the full JEI mod as a runtime dependency

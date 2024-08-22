@@ -1,5 +1,6 @@
 {
     "type": "minecraft:crafting_shaped",
+	"group": "stockade",
     
     "pattern":
     [
@@ -26,3 +27,5 @@
         "count": 3
     }
 }
+
+

@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfencesbyg:mangrove_picket_fence",
+	  "mcwfencesbyg:mangrove_stockade_fence",
+	  "mcwfencesbyg:mangrove_horse_fence",
+	  "mcwfencesbyg:mangrove_wired_fence",
+	  "mcwfencesbyg:mangrove_highley_gate",
+	  "mcwfencesbyg:mangrove_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "byg:mangrove_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

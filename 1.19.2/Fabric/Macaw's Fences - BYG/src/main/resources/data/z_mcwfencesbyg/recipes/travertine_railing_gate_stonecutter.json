@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "byg:travertine"
+    },
+    "result": "z_mcwfencesbyg:travertine_railing_gate",
+    "group": "fences",
+    "count": 1
+}

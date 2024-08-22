@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfencesbyg:ether_picket_fence",
+	  "mcwfencesbyg:ether_stockade_fence",
+	  "mcwfencesbyg:ether_horse_fence",
+	  "mcwfencesbyg:ether_wired_fence",
+	  "mcwfencesbyg:ether_highley_gate",
+	  "mcwfencesbyg:ether_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "byg:ether_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "z_mcwfencesbyg:modern_scoria_stone_wall",
+	  
+	  "z_mcwfencesbyg:railing_scoria_stone_wall",
+	  
+	  "z_mcwfencesbyg:scoria_stone_railing_gate",
+	  
+	  "z_mcwfencesbyg:scoria_stone_pillar_wall",
+	  
+	  
+	  "z_mcwfencesbyg:scoria_stone_grass_topped_wall"
+    ]
+  },
+  "criteria": {
+    "has_sand": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "byg:scoria_stone"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_sand"
+    ]
+  ]
+}

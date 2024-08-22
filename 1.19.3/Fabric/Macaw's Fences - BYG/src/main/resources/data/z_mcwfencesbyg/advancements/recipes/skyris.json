@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "z_mcwfencesbyg:skyris_picket_fence",
+	  "z_mcwfencesbyg:skyris_stockade_fence",
+	  "z_mcwfencesbyg:skyris_horse_fence",
+	  "z_mcwfencesbyg:skyris_wired_fence",
+	  "z_mcwfencesbyg:skyris_highley_gate",
+	  "z_mcwfencesbyg:skyris_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "byg:skyris_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

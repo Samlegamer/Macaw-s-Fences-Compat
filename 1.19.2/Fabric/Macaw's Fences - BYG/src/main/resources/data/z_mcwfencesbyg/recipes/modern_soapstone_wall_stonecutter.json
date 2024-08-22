@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "byg:soapstone"
+    },
+    "result": "z_mcwfencesbyg:modern_soapstone_wall",
+    "group": "fences",
+    "count": 1
+}

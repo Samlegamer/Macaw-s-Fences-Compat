@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "byg:dacite"
+    },
+    "result": "z_mcwfencesbyg:dacite_railing_gate",
+    "group": "fences",
+    "count": 1
+}

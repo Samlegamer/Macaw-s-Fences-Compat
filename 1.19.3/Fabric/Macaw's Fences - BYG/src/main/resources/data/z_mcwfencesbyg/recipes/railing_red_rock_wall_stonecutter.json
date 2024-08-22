@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "byg:red_rock"
+    },
+    "result": "z_mcwfencesbyg:railing_red_rock_wall",
+    "group": "fences",
+    "count": 1
+}

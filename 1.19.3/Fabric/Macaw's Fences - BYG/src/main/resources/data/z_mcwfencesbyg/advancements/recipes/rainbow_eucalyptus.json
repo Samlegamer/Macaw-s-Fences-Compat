@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "z_mcwfencesbyg:rainbow_eucalyptus_picket_fence",
+	  "z_mcwfencesbyg:rainbow_eucalyptus_stockade_fence",
+	  "z_mcwfencesbyg:rainbow_eucalyptus_horse_fence",
+	  "z_mcwfencesbyg:rainbow_eucalyptus_wired_fence",
+	  "z_mcwfencesbyg:rainbow_eucalyptus_highley_gate",
+	  "z_mcwfencesbyg:rainbow_eucalyptus_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "byg:rainbow_eucalyptus_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}
