@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfencesbop:umbran_picket_fence",
+	  "mcwfencesbop:umbran_stockade_fence",
+	  "mcwfencesbop:umbran_horse_fence",
+	  "mcwfencesbop:umbran_wired_fence",
+	  "mcwfencesbop:umbran_highley_gate",
+	  "mcwfencesbop:umbran_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "biomesoplenty:umbran_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

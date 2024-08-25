@@ -44,6 +44,14 @@
 "mcwfencesbop:empyreal_picket_fence",
 "mcwfencesbop:empyreal_stockade_fence",
 "mcwfencesbop:empyreal_horse_fence",
-"mcwfencesbop:empyreal_wired_fence"
+"mcwfencesbop:empyreal_wired_fence",
+"mcwfencesbop:maple_picket_fence",
+"mcwfencesbop:maple_stockade_fence",
+"mcwfencesbop:maple_horse_fence",
+"mcwfencesbop:maple_wired_fence",
+"mcwfencesbop:pine_picket_fence",
+"mcwfencesbop:pine_stockade_fence",
+"mcwfencesbop:pine_horse_fence",
+"mcwfencesbop:pine_wired_fence"
   ]
 }

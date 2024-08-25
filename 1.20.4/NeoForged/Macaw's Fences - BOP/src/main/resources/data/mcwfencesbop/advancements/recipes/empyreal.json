@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfencesbop:empyreal_picket_fence",
+	  "mcwfencesbop:empyreal_stockade_fence",
+	  "mcwfencesbop:empyreal_horse_fence",
+	  "mcwfencesbop:empyreal_wired_fence",
+	  "mcwfencesbop:empyreal_highley_gate",
+	  "mcwfencesbop:empyreal_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "biomesoplenty:empyreal_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

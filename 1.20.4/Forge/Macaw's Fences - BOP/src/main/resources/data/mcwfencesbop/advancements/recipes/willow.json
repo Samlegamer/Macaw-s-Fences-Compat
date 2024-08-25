@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfencesbop:willow_picket_fence",
+	  "mcwfencesbop:willow_stockade_fence",
+	  "mcwfencesbop:willow_horse_fence",
+	  "mcwfencesbop:willow_wired_fence",
+	  "mcwfencesbop:willow_highley_gate",
+	  "mcwfencesbop:willow_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "biomesoplenty:willow_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

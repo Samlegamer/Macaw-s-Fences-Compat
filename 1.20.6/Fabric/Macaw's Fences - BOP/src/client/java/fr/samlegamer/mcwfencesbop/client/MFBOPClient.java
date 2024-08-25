@@ -3,6 +3,8 @@ package fr.samlegamer.mcwfencesbop.client;
 import fr.samlegamer.mcwfencesbop.block.MFBOPBlocksRegistry;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
+import net.minecraft.client.color.world.FoliageColors;
 import net.minecraft.client.render.RenderLayer;
 
 public class MFBOPClient implements ClientModInitializer
@@ -10,16 +12,116 @@ public class MFBOPClient implements ClientModInitializer
 	@Override
 	public void onInitializeClient()
 	{
-		BlockRenderLayerMap.INSTANCE.putBlock(MFBOPBlocksRegistry.dead_wired_fence, RenderLayer.getCutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(MFBOPBlocksRegistry.fir_wired_fence, RenderLayer.getCutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(MFBOPBlocksRegistry.hellbark_wired_fence, RenderLayer.getCutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(MFBOPBlocksRegistry.jacaranda_wired_fence, RenderLayer.getCutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(MFBOPBlocksRegistry.magic_wired_fence, RenderLayer.getCutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(MFBOPBlocksRegistry.mahogany_wired_fence, RenderLayer.getCutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(MFBOPBlocksRegistry.palm_wired_fence, RenderLayer.getCutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(MFBOPBlocksRegistry.redwood_wired_fence, RenderLayer.getCutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(MFBOPBlocksRegistry.umbran_wired_fence, RenderLayer.getCutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(MFBOPBlocksRegistry.willow_wired_fence, RenderLayer.getCutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(MFBOPBlocksRegistry.empyreal_wired_fence, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(),
+				MFBOPBlocksRegistry.dead_picket_fence, 
+				MFBOPBlocksRegistry.dead_stockade_fence, 
+				MFBOPBlocksRegistry.dead_horse_fence, 
+				MFBOPBlocksRegistry.dead_wired_fence, 
+				MFBOPBlocksRegistry.dead_highley_gate, 
+				MFBOPBlocksRegistry.dead_pyramid_gate ,
+				MFBOPBlocksRegistry.fir_picket_fence, 
+				MFBOPBlocksRegistry.fir_stockade_fence, 
+				MFBOPBlocksRegistry.fir_horse_fence, 
+				MFBOPBlocksRegistry.fir_wired_fence, 
+				MFBOPBlocksRegistry.fir_highley_gate, 
+				MFBOPBlocksRegistry.fir_pyramid_gate ,
+				MFBOPBlocksRegistry.hellbark_picket_fence, 
+				MFBOPBlocksRegistry.hellbark_stockade_fence, 
+				MFBOPBlocksRegistry.hellbark_horse_fence, 
+				MFBOPBlocksRegistry.hellbark_wired_fence, 
+				MFBOPBlocksRegistry.hellbark_highley_gate, 
+				MFBOPBlocksRegistry.hellbark_pyramid_gate ,
+				MFBOPBlocksRegistry.jacaranda_picket_fence, 
+				MFBOPBlocksRegistry.jacaranda_stockade_fence, 
+				MFBOPBlocksRegistry.jacaranda_horse_fence, 
+				MFBOPBlocksRegistry.jacaranda_wired_fence, 
+				MFBOPBlocksRegistry.jacaranda_highley_gate, 
+				MFBOPBlocksRegistry.jacaranda_pyramid_gate ,
+				MFBOPBlocksRegistry.magic_picket_fence, 
+				MFBOPBlocksRegistry.magic_stockade_fence, 
+				MFBOPBlocksRegistry.magic_horse_fence, 
+				MFBOPBlocksRegistry.magic_wired_fence, 
+				MFBOPBlocksRegistry.magic_highley_gate, 
+				MFBOPBlocksRegistry.magic_pyramid_gate ,
+				MFBOPBlocksRegistry.mahogany_picket_fence, 
+				MFBOPBlocksRegistry.mahogany_stockade_fence, 
+				MFBOPBlocksRegistry.mahogany_horse_fence, 
+				MFBOPBlocksRegistry.mahogany_wired_fence, 
+				MFBOPBlocksRegistry.mahogany_highley_gate, 
+				MFBOPBlocksRegistry.mahogany_pyramid_gate ,
+				MFBOPBlocksRegistry.palm_picket_fence, 
+				MFBOPBlocksRegistry.palm_stockade_fence, 
+				MFBOPBlocksRegistry.palm_horse_fence, 
+				MFBOPBlocksRegistry.palm_wired_fence, 
+				MFBOPBlocksRegistry.palm_highley_gate, 
+				MFBOPBlocksRegistry.palm_pyramid_gate ,
+				MFBOPBlocksRegistry.redwood_picket_fence, 
+				MFBOPBlocksRegistry.redwood_stockade_fence, 
+				MFBOPBlocksRegistry.redwood_horse_fence, 
+				MFBOPBlocksRegistry.redwood_wired_fence, 
+				MFBOPBlocksRegistry.redwood_highley_gate, 
+				MFBOPBlocksRegistry.redwood_pyramid_gate ,
+				MFBOPBlocksRegistry.umbran_picket_fence, 
+				MFBOPBlocksRegistry.umbran_stockade_fence, 
+				MFBOPBlocksRegistry.umbran_horse_fence, 
+				MFBOPBlocksRegistry.umbran_wired_fence, 
+				MFBOPBlocksRegistry.umbran_highley_gate, 
+				MFBOPBlocksRegistry.umbran_pyramid_gate ,
+				MFBOPBlocksRegistry.willow_picket_fence, 
+				MFBOPBlocksRegistry.willow_stockade_fence, 
+				MFBOPBlocksRegistry.willow_horse_fence, 
+				MFBOPBlocksRegistry.willow_wired_fence, 
+				MFBOPBlocksRegistry.willow_highley_gate, 
+				MFBOPBlocksRegistry.willow_pyramid_gate ,
+				MFBOPBlocksRegistry.empyreal_picket_fence, 
+				MFBOPBlocksRegistry.empyreal_stockade_fence, 
+				MFBOPBlocksRegistry.empyreal_horse_fence, 
+				MFBOPBlocksRegistry.empyreal_wired_fence, 
+				MFBOPBlocksRegistry.empyreal_highley_gate, 
+				MFBOPBlocksRegistry.empyreal_pyramid_gate ,
+				MFBOPBlocksRegistry.maple_picket_fence, 
+				MFBOPBlocksRegistry.maple_stockade_fence, 
+				MFBOPBlocksRegistry.maple_horse_fence, 
+				MFBOPBlocksRegistry.maple_wired_fence, 
+				MFBOPBlocksRegistry.maple_highley_gate, 
+				MFBOPBlocksRegistry.maple_pyramid_gate ,
+				MFBOPBlocksRegistry.pine_picket_fence, 
+				MFBOPBlocksRegistry.pine_stockade_fence, 
+				MFBOPBlocksRegistry.pine_horse_fence, 
+				MFBOPBlocksRegistry.pine_wired_fence, 
+				MFBOPBlocksRegistry.pine_highley_gate, 
+				MFBOPBlocksRegistry.pine_pyramid_gate ,
+				MFBOPBlocksRegistry.dead_hedge ,
+				MFBOPBlocksRegistry.fir_hedge ,
+				MFBOPBlocksRegistry.hellbark_hedge ,
+				MFBOPBlocksRegistry.jacaranda_hedge ,
+				MFBOPBlocksRegistry.magic_hedge ,
+				MFBOPBlocksRegistry.mahogany_hedge ,
+				MFBOPBlocksRegistry.palm_hedge ,
+				MFBOPBlocksRegistry.redwood_hedge ,
+				MFBOPBlocksRegistry.umbran_hedge ,
+				MFBOPBlocksRegistry.willow_hedge ,
+				MFBOPBlocksRegistry.empyreal_hedge ,
+				MFBOPBlocksRegistry.pine_hedge ,
+				MFBOPBlocksRegistry.orange_maple_hedge ,
+				MFBOPBlocksRegistry.red_maple_hedge ,
+				MFBOPBlocksRegistry.yellow_maple_hedge ,
+				MFBOPBlocksRegistry.cypress_hedge ,
+				MFBOPBlocksRegistry.snowblossom_hedge ,
+				MFBOPBlocksRegistry.flowering_oak_hedge ,
+				MFBOPBlocksRegistry.rainbow_birch_hedge ,
+				MFBOPBlocksRegistry.origin_hedge);
+		
+		ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> FoliageColors.getDefaultColor(), MFBOPBlocksRegistry.mahogany_hedge, 
+        		MFBOPBlocksRegistry.willow_hedge, 
+        		MFBOPBlocksRegistry.palm_hedge, 
+        		MFBOPBlocksRegistry.pine_hedge, 
+        		MFBOPBlocksRegistry.flowering_oak_hedge);
+
+		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> FoliageColors.getDefaultColor(), MFBOPBlocksRegistry.mahogany_hedge, 
+        		MFBOPBlocksRegistry.willow_hedge, 
+        		MFBOPBlocksRegistry.palm_hedge, 
+        		MFBOPBlocksRegistry.pine_hedge, 
+        		MFBOPBlocksRegistry.flowering_oak_hedge);
 	}
 }

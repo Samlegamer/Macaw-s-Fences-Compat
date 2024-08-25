@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "mcwfencesbop",
-	"version": "1.20.4-1.2",
+	"version": "1.20.4-1.3",
 	"name": "Macaw's Fences - BOP",
 	"description": "Compatibility between Macaw's Fences and Biome O' Plenty for Minecraft Fabric 1.20.4 !",
 	"authors": [
@@ -26,7 +26,11 @@
 		"fabricloader": ">=0.15.0",
 		"minecraft": "~1.20.4",
 		"java": ">=17",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"biomesoplenty": "*",
+		"terrablender": "*",
+		"mcwfences": "*",
+		"glitchcore": "*"
 	},
 	"suggests": {
 		"another-mod": "*"
