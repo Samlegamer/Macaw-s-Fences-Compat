@@ -62,3 +62,21 @@ mandatory=true
 versionRange="${minecraft_version_range}"
 ordering="NONE"
 side="BOTH"
+
+[[dependencies.mcwfencesbop]]
+    modId = "mcwfences"
+    mandatory = false
+    ordering = "AFTER"
+    versionRange = "NONE"
+
+[[dependencies.mcwfencesbop]]
+    modId = "biomesoplenty"
+    mandatory = false
+    ordering = "AFTER"
+    versionRange = "NONE"
+
+[[dependencies.mcwfencesbop]]
+    modId = "terrablender"
+    mandatory = false
+    ordering = "AFTER"
+    versionRange = "NONE"

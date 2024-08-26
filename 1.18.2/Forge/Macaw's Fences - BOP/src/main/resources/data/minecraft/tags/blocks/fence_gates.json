@@ -1,0 +1,27 @@
+{
+  "replace": false,
+  "values": [
+"mcwfencesbop:cherry_highley_gate",
+"mcwfencesbop:cherry_pyramid_gate",
+"mcwfencesbop:dead_highley_gate",
+"mcwfencesbop:dead_pyramid_gate",
+"mcwfencesbop:fir_highley_gate",
+"mcwfencesbop:fir_pyramid_gate",
+"mcwfencesbop:hellbark_highley_gate",
+"mcwfencesbop:hellbark_pyramid_gate",
+"mcwfencesbop:jacaranda_highley_gate",
+"mcwfencesbop:jacaranda_pyramid_gate",
+"mcwfencesbop:magic_highley_gate",
+"mcwfencesbop:magic_pyramid_gate",
+"mcwfencesbop:mahogany_highley_gate",
+"mcwfencesbop:mahogany_pyramid_gate",
+"mcwfencesbop:palm_highley_gate",
+"mcwfencesbop:palm_pyramid_gate",
+"mcwfencesbop:redwood_highley_gate",
+"mcwfencesbop:redwood_pyramid_gate",
+"mcwfencesbop:umbran_highley_gate",
+"mcwfencesbop:umbran_pyramid_gate",
+"mcwfencesbop:willow_highley_gate",
+"mcwfencesbop:willow_pyramid_gate"
+  ]
+}

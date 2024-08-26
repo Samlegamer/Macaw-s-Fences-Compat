@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfencesbop:mahogany_picket_fence",
+	  "mcwfencesbop:mahogany_stockade_fence",
+	  "mcwfencesbop:mahogany_horse_fence",
+	  "mcwfencesbop:mahogany_wired_fence",
+	  "mcwfencesbop:mahogany_highley_gate",
+	  "mcwfencesbop:mahogany_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "biomesoplenty:mahogany_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

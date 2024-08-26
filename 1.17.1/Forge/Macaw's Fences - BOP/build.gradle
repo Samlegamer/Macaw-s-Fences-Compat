@@ -13,7 +13,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.17.1-1.1'
+version = '1.17.1-1.2'
 group = 'fr.samlegamer.mcwfencesbop'
 archivesBaseName = 'mcwfencesbop'
 
@@ -132,7 +132,7 @@ dependencies {
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft 'net.minecraftforge:forge:1.17.1-37.1.1'
     implementation fg.deobf("curse.maven:biomes-o-plenty-220318:3432927")
-    implementation fg.deobf("curse.maven:macaws-fences-and-walls-453925:4204538")
+    implementation fg.deobf("curse.maven:macaws-fences-and-walls-453925:5442206")
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency
     // runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}") // Adds the full JEI mod as a runtime dependency

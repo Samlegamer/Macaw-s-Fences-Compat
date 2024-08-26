@@ -1,123 +1,117 @@
 package fr.samlegamer.mcwfencesbop.block;
 
+import com.google.common.base.Supplier;
+import com.mcwfences.kikoz.objects.FenceHitbox;
 import com.mcwfences.kikoz.objects.FuelItemBlock;
 import com.mcwfences.kikoz.objects.WiredFence;
 import fr.samlegamer.mcwfencesbop.McwFencesBOP;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FenceBlock;
 import net.minecraft.world.level.block.FenceGateBlock;
-import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.Material;
-import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class MFBOPBlocksRegistry
 {
-	public static Block cherry_picket_fence, cherry_stockade_fence, cherry_horse_fence, cherry_wired_fence, cherry_highley_gate, cherry_pyramid_gate;
-	public static Block dead_picket_fence, dead_stockade_fence, dead_horse_fence, dead_wired_fence, dead_highley_gate, dead_pyramid_gate;
-	public static Block fir_picket_fence, fir_stockade_fence, fir_horse_fence, fir_wired_fence, fir_highley_gate, fir_pyramid_gate;
-	public static Block hellbark_picket_fence, hellbark_stockade_fence, hellbark_horse_fence, hellbark_wired_fence, hellbark_highley_gate, hellbark_pyramid_gate;
-	public static Block jacaranda_picket_fence, jacaranda_stockade_fence, jacaranda_horse_fence, jacaranda_wired_fence, jacaranda_highley_gate, jacaranda_pyramid_gate;
-	public static Block magic_picket_fence, magic_stockade_fence, magic_horse_fence, magic_wired_fence, magic_highley_gate, magic_pyramid_gate;
-	public static Block mahogany_picket_fence, mahogany_stockade_fence, mahogany_horse_fence, mahogany_wired_fence, mahogany_highley_gate, mahogany_pyramid_gate;
-	public static Block palm_picket_fence, palm_stockade_fence, palm_horse_fence, palm_wired_fence, palm_highley_gate, palm_pyramid_gate;
-	public static Block redwood_picket_fence, redwood_stockade_fence, redwood_horse_fence, redwood_wired_fence, redwood_highley_gate, redwood_pyramid_gate;
-	public static Block umbran_picket_fence, umbran_stockade_fence, umbran_horse_fence, umbran_wired_fence, umbran_highley_gate, umbran_pyramid_gate;
-	public static Block willow_picket_fence, willow_stockade_fence, willow_horse_fence, willow_wired_fence, willow_highley_gate, willow_pyramid_gate;
+	public static final DeferredRegister<Block> BLOCKS_REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, McwFencesBOP.MODID);    
+	public static final DeferredRegister<Item> ITEMS_REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, McwFencesBOP.MODID);
 
-	@SubscribeEvent
-	public static void registry(final RegistryEvent.Register<Block> event)
-	{
-		cherry_picket_fence = registerBlock(new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)), "cherry_picket_fence");
-		cherry_stockade_fence = registerBlock(new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)), "cherry_stockade_fence");
-		cherry_horse_fence = registerBlock(new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)), "cherry_horse_fence");
-		cherry_wired_fence = registerBlock(new WiredFence(null), "cherry_wired_fence");
-		cherry_highley_gate = registerBlock(new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)), "cherry_highley_gate");
-		cherry_pyramid_gate = registerBlock(new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)), "cherry_pyramid_gate");
-		
-		dead_picket_fence = registerBlock(new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)), "dead_picket_fence");
-		dead_stockade_fence = registerBlock(new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)), "dead_stockade_fence");
-		dead_horse_fence = registerBlock(new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)), "dead_horse_fence");
-		dead_wired_fence = registerBlock(new WiredFence(null), "dead_wired_fence");
-		dead_highley_gate = registerBlock(new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)), "dead_highley_gate");
-		dead_pyramid_gate = registerBlock(new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)), "dead_pyramid_gate");
-
-		fir_picket_fence = registerBlock(new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)), "fir_picket_fence");
-		fir_stockade_fence = registerBlock(new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)), "fir_stockade_fence");
-		fir_horse_fence = registerBlock(new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)), "fir_horse_fence");
-		fir_wired_fence = registerBlock(new WiredFence(null), "fir_wired_fence");
-		fir_highley_gate = registerBlock(new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)), "fir_highley_gate");
-		fir_pyramid_gate = registerBlock(new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)), "fir_pyramid_gate");
-
-		hellbark_picket_fence = registerBlock(new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)), "hellbark_picket_fence");
-		hellbark_stockade_fence = registerBlock(new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)), "hellbark_stockade_fence");
-		hellbark_horse_fence = registerBlock(new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)), "hellbark_horse_fence");
-		hellbark_wired_fence = registerBlock(new WiredFence(null), "hellbark_wired_fence");
-		hellbark_highley_gate = registerBlock(new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)), "hellbark_highley_gate");
-		hellbark_pyramid_gate = registerBlock(new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)), "hellbark_pyramid_gate");
-
-		jacaranda_picket_fence = registerBlock(new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)), "jacaranda_picket_fence");
-		jacaranda_stockade_fence = registerBlock(new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)), "jacaranda_stockade_fence");
-		jacaranda_horse_fence = registerBlock(new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)), "jacaranda_horse_fence");
-		jacaranda_wired_fence = registerBlock(new WiredFence(null), "jacaranda_wired_fence");
-		jacaranda_highley_gate = registerBlock(new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)), "jacaranda_highley_gate");
-		jacaranda_pyramid_gate = registerBlock(new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)), "jacaranda_pyramid_gate");
-
-		magic_picket_fence = registerBlock(new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)), "magic_picket_fence");
-		magic_stockade_fence = registerBlock(new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)), "magic_stockade_fence");
-		magic_horse_fence = registerBlock(new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)), "magic_horse_fence");
-		magic_wired_fence = registerBlock(new WiredFence(null), "magic_wired_fence");
-		magic_highley_gate = registerBlock(new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)), "magic_highley_gate");
-		magic_pyramid_gate = registerBlock(new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)), "magic_pyramid_gate");
-
-		mahogany_picket_fence = registerBlock(new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)), "mahogany_picket_fence");
-		mahogany_stockade_fence = registerBlock(new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)), "mahogany_stockade_fence");
-		mahogany_horse_fence = registerBlock(new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)), "mahogany_horse_fence");
-		mahogany_wired_fence = registerBlock(new WiredFence(null), "mahogany_wired_fence");
-		mahogany_highley_gate = registerBlock(new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)), "mahogany_highley_gate");
-		mahogany_pyramid_gate = registerBlock(new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)), "mahogany_pyramid_gate");
-
-		palm_picket_fence = registerBlock(new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)), "palm_picket_fence");
-		palm_stockade_fence = registerBlock(new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)), "palm_stockade_fence");
-		palm_horse_fence = registerBlock(new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)), "palm_horse_fence");
-		palm_wired_fence = registerBlock(new WiredFence(null), "palm_wired_fence");
-		palm_highley_gate = registerBlock(new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)), "palm_highley_gate");
-		palm_pyramid_gate = registerBlock(new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)), "palm_pyramid_gate");
-
-		redwood_picket_fence = registerBlock(new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)), "redwood_picket_fence");
-		redwood_stockade_fence = registerBlock(new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)), "redwood_stockade_fence");
-		redwood_horse_fence = registerBlock(new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)), "redwood_horse_fence");
-		redwood_wired_fence = registerBlock(new WiredFence(null), "redwood_wired_fence");
-		redwood_highley_gate = registerBlock(new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)), "redwood_highley_gate");
-		redwood_pyramid_gate = registerBlock(new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)), "redwood_pyramid_gate");
-
-		umbran_picket_fence = registerBlock(new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)), "umbran_picket_fence");
-		umbran_stockade_fence = registerBlock(new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)), "umbran_stockade_fence");
-		umbran_horse_fence = registerBlock(new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)), "umbran_horse_fence");
-		umbran_wired_fence = registerBlock(new WiredFence(null), "umbran_wired_fence");
-		umbran_highley_gate = registerBlock(new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)), "umbran_highley_gate");
-		umbran_pyramid_gate = registerBlock(new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)), "umbran_pyramid_gate");
-
-		willow_picket_fence = registerBlock(new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)), "willow_picket_fence");
-		willow_stockade_fence = registerBlock(new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)), "willow_stockade_fence");
-		willow_horse_fence = registerBlock(new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.8F, 3.0F).sound(SoundType.WOOD)), "willow_horse_fence");
-		willow_wired_fence = registerBlock(new WiredFence(null), "willow_wired_fence");
-		willow_highley_gate = registerBlock(new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)), "willow_highley_gate");
-		willow_pyramid_gate = registerBlock(new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)), "willow_pyramid_gate");
-	}
+	private static final BlockBehaviour.Properties WOOD = BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS);
+	private static final BlockBehaviour.Properties HEDGES = BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES);
 	
-	public static Block registerBlock(Block block, String name)
+	public static final RegistryObject<Block> cherry_picket_fence = createBlock("cherry_picket_fence", () -> new FenceBlock(WOOD));
+	public static final RegistryObject<Block> cherry_stockade_fence = createBlock("cherry_stockade_fence", () -> new FenceBlock(WOOD));
+	public static final RegistryObject<Block> cherry_horse_fence = createBlock("cherry_horse_fence", () -> new FenceBlock(WOOD));
+	public static final RegistryObject<Block> cherry_wired_fence = createBlock("cherry_wired_fence", () -> new WiredFence(WOOD));
+	public static final RegistryObject<Block> cherry_highley_gate = createBlock("cherry_highley_gate", () -> new FenceGateBlock(WOOD));
+	public static final RegistryObject<Block> cherry_pyramid_gate = createBlock("cherry_pyramid_gate", () -> new FenceGateBlock(WOOD));
+	public static final RegistryObject<Block> dead_picket_fence = createBlock("dead_picket_fence", () -> new FenceBlock(WOOD));
+	public static final RegistryObject<Block> dead_stockade_fence = createBlock("dead_stockade_fence", () -> new FenceBlock(WOOD));
+	public static final RegistryObject<Block> dead_horse_fence = createBlock("dead_horse_fence", () -> new FenceBlock(WOOD));
+	public static final RegistryObject<Block> dead_wired_fence = createBlock("dead_wired_fence", () -> new WiredFence(WOOD));
+	public static final RegistryObject<Block> dead_highley_gate = createBlock("dead_highley_gate", () -> new FenceGateBlock(WOOD));
+	public static final RegistryObject<Block> dead_pyramid_gate = createBlock("dead_pyramid_gate", () -> new FenceGateBlock(WOOD));
+	public static final RegistryObject<Block> fir_picket_fence = createBlock("fir_picket_fence", () -> new FenceBlock(WOOD));
+	public static final RegistryObject<Block> fir_stockade_fence = createBlock("fir_stockade_fence", () -> new FenceBlock(WOOD));
+	public static final RegistryObject<Block> fir_horse_fence = createBlock("fir_horse_fence", () -> new FenceBlock(WOOD));
+	public static final RegistryObject<Block> fir_wired_fence = createBlock("fir_wired_fence", () -> new WiredFence(WOOD));
+	public static final RegistryObject<Block> fir_highley_gate = createBlock("fir_highley_gate", () -> new FenceGateBlock(WOOD));
+	public static final RegistryObject<Block> fir_pyramid_gate = createBlock("fir_pyramid_gate", () -> new FenceGateBlock(WOOD));
+	public static final RegistryObject<Block> hellbark_picket_fence = createBlock("hellbark_picket_fence", () -> new FenceBlock(WOOD));
+	public static final RegistryObject<Block> hellbark_stockade_fence = createBlock("hellbark_stockade_fence", () -> new FenceBlock(WOOD));
+	public static final RegistryObject<Block> hellbark_horse_fence = createBlock("hellbark_horse_fence", () -> new FenceBlock(WOOD));
+	public static final RegistryObject<Block> hellbark_wired_fence = createBlock("hellbark_wired_fence", () -> new WiredFence(WOOD));
+	public static final RegistryObject<Block> hellbark_highley_gate = createBlock("hellbark_highley_gate", () -> new FenceGateBlock(WOOD));
+	public static final RegistryObject<Block> hellbark_pyramid_gate = createBlock("hellbark_pyramid_gate", () -> new FenceGateBlock(WOOD));
+	public static final RegistryObject<Block> jacaranda_picket_fence = createBlock("jacaranda_picket_fence", () -> new FenceBlock(WOOD));
+	public static final RegistryObject<Block> jacaranda_stockade_fence = createBlock("jacaranda_stockade_fence", () -> new FenceBlock(WOOD));
+	public static final RegistryObject<Block> jacaranda_horse_fence = createBlock("jacaranda_horse_fence", () -> new FenceBlock(WOOD));
+	public static final RegistryObject<Block> jacaranda_wired_fence = createBlock("jacaranda_wired_fence", () -> new WiredFence(WOOD));
+	public static final RegistryObject<Block> jacaranda_highley_gate = createBlock("jacaranda_highley_gate", () -> new FenceGateBlock(WOOD));
+	public static final RegistryObject<Block> jacaranda_pyramid_gate = createBlock("jacaranda_pyramid_gate", () -> new FenceGateBlock(WOOD));
+	public static final RegistryObject<Block> magic_picket_fence = createBlock("magic_picket_fence", () -> new FenceBlock(WOOD));
+	public static final RegistryObject<Block> magic_stockade_fence = createBlock("magic_stockade_fence", () -> new FenceBlock(WOOD));
+	public static final RegistryObject<Block> magic_horse_fence = createBlock("magic_horse_fence", () -> new FenceBlock(WOOD));
+	public static final RegistryObject<Block> magic_wired_fence = createBlock("magic_wired_fence", () -> new WiredFence(WOOD));
+	public static final RegistryObject<Block> magic_highley_gate = createBlock("magic_highley_gate", () -> new FenceGateBlock(WOOD));
+	public static final RegistryObject<Block> magic_pyramid_gate = createBlock("magic_pyramid_gate", () -> new FenceGateBlock(WOOD));
+	public static final RegistryObject<Block> mahogany_picket_fence = createBlock("mahogany_picket_fence", () -> new FenceBlock(WOOD));
+	public static final RegistryObject<Block> mahogany_stockade_fence = createBlock("mahogany_stockade_fence", () -> new FenceBlock(WOOD));
+	public static final RegistryObject<Block> mahogany_horse_fence = createBlock("mahogany_horse_fence", () -> new FenceBlock(WOOD));
+	public static final RegistryObject<Block> mahogany_wired_fence = createBlock("mahogany_wired_fence", () -> new WiredFence(WOOD));
+	public static final RegistryObject<Block> mahogany_highley_gate = createBlock("mahogany_highley_gate", () -> new FenceGateBlock(WOOD));
+	public static final RegistryObject<Block> mahogany_pyramid_gate = createBlock("mahogany_pyramid_gate", () -> new FenceGateBlock(WOOD));
+	public static final RegistryObject<Block> palm_picket_fence = createBlock("palm_picket_fence", () -> new FenceBlock(WOOD));
+	public static final RegistryObject<Block> palm_stockade_fence = createBlock("palm_stockade_fence", () -> new FenceBlock(WOOD));
+	public static final RegistryObject<Block> palm_horse_fence = createBlock("palm_horse_fence", () -> new FenceBlock(WOOD));
+	public static final RegistryObject<Block> palm_wired_fence = createBlock("palm_wired_fence", () -> new WiredFence(WOOD));
+	public static final RegistryObject<Block> palm_highley_gate = createBlock("palm_highley_gate", () -> new FenceGateBlock(WOOD));
+	public static final RegistryObject<Block> palm_pyramid_gate = createBlock("palm_pyramid_gate", () -> new FenceGateBlock(WOOD));
+	public static final RegistryObject<Block> redwood_picket_fence = createBlock("redwood_picket_fence", () -> new FenceBlock(WOOD));
+	public static final RegistryObject<Block> redwood_stockade_fence = createBlock("redwood_stockade_fence", () -> new FenceBlock(WOOD));
+	public static final RegistryObject<Block> redwood_horse_fence = createBlock("redwood_horse_fence", () -> new FenceBlock(WOOD));
+	public static final RegistryObject<Block> redwood_wired_fence = createBlock("redwood_wired_fence", () -> new WiredFence(WOOD));
+	public static final RegistryObject<Block> redwood_highley_gate = createBlock("redwood_highley_gate", () -> new FenceGateBlock(WOOD));
+	public static final RegistryObject<Block> redwood_pyramid_gate = createBlock("redwood_pyramid_gate", () -> new FenceGateBlock(WOOD));
+	public static final RegistryObject<Block> umbran_picket_fence = createBlock("umbran_picket_fence", () -> new FenceBlock(WOOD));
+	public static final RegistryObject<Block> umbran_stockade_fence = createBlock("umbran_stockade_fence", () -> new FenceBlock(WOOD));
+	public static final RegistryObject<Block> umbran_horse_fence = createBlock("umbran_horse_fence", () -> new FenceBlock(WOOD));
+	public static final RegistryObject<Block> umbran_wired_fence = createBlock("umbran_wired_fence", () -> new WiredFence(WOOD));
+	public static final RegistryObject<Block> umbran_highley_gate = createBlock("umbran_highley_gate", () -> new FenceGateBlock(WOOD));
+	public static final RegistryObject<Block> umbran_pyramid_gate = createBlock("umbran_pyramid_gate", () -> new FenceGateBlock(WOOD));
+	public static final RegistryObject<Block> willow_picket_fence = createBlock("willow_picket_fence", () -> new FenceBlock(WOOD));
+	public static final RegistryObject<Block> willow_stockade_fence = createBlock("willow_stockade_fence", () -> new FenceBlock(WOOD));
+	public static final RegistryObject<Block> willow_horse_fence = createBlock("willow_horse_fence", () -> new FenceBlock(WOOD));
+	public static final RegistryObject<Block> willow_wired_fence = createBlock("willow_wired_fence", () -> new WiredFence(WOOD));
+	public static final RegistryObject<Block> willow_highley_gate = createBlock("willow_highley_gate", () -> new FenceGateBlock(WOOD));
+	public static final RegistryObject<Block> willow_pyramid_gate = createBlock("willow_pyramid_gate", () -> new FenceGateBlock(WOOD));
+	public static final RegistryObject<Block> pink_cherry_hedge = createBlock("pink_cherry_hedge", () -> new FenceHitbox(HEDGES));
+	public static final RegistryObject<Block> dead_hedge = createBlock("dead_hedge", () -> new FenceHitbox(HEDGES));
+	public static final RegistryObject<Block> fir_hedge = createBlock("fir_hedge", () -> new FenceHitbox(HEDGES));
+	public static final RegistryObject<Block> hellbark_hedge = createBlock("hellbark_hedge", () -> new FenceHitbox(HEDGES));
+	public static final RegistryObject<Block> jacaranda_hedge = createBlock("jacaranda_hedge", () -> new FenceHitbox(HEDGES));
+	public static final RegistryObject<Block> magic_hedge = createBlock("magic_hedge", () -> new FenceHitbox(HEDGES));
+	public static final RegistryObject<Block> mahogany_hedge = createBlock("mahogany_hedge", () -> new FenceHitbox(HEDGES));
+	public static final RegistryObject<Block> palm_hedge = createBlock("palm_hedge", () -> new FenceHitbox(HEDGES));
+	public static final RegistryObject<Block> redwood_hedge = createBlock("redwood_hedge", () -> new FenceHitbox(HEDGES));
+	public static final RegistryObject<Block> umbran_hedge = createBlock("umbran_hedge", () -> new FenceHitbox(HEDGES));
+	public static final RegistryObject<Block> willow_hedge = createBlock("willow_hedge", () -> new FenceHitbox(HEDGES));
+	public static final RegistryObject<Block> maple_hedge = createBlock("maple_hedge", () -> new FenceHitbox(HEDGES));
+	public static final RegistryObject<Block> orange_autumn_hedge = createBlock("orange_autumn_hedge", () -> new FenceHitbox(HEDGES));
+	public static final RegistryObject<Block> yellow_autumn_hedge = createBlock("yellow_autumn_hedge", () -> new FenceHitbox(HEDGES));
+	public static final RegistryObject<Block> white_cherry_hedge = createBlock("white_cherry_hedge", () -> new FenceHitbox(HEDGES));
+	public static final RegistryObject<Block> flowering_oak_hedge = createBlock("flowering_oak_hedge", () -> new FenceHitbox(HEDGES));
+	public static final RegistryObject<Block> rainbow_birch_hedge = createBlock("rainbow_birch_hedge", () -> new FenceHitbox(HEDGES));
+	public static final RegistryObject<Block> origin_hedge = createBlock("origin_hedge", () -> new FenceHitbox(HEDGES));
+	
+    public static RegistryObject<Block> createBlock(String name, Supplier<? extends Block> supplier)
     {
-        block.setRegistryName(name);
-        ForgeRegistries.BLOCKS.register(block);
-		FuelItemBlock itemBlock = new FuelItemBlock(block, new Item.Properties().tab(McwFencesBOP.TAB_GROUP));
-        itemBlock.setRegistryName(name);
-        ForgeRegistries.ITEMS.register(itemBlock);
+        RegistryObject<Block> block = BLOCKS_REGISTRY.register(name, supplier);
+        ITEMS_REGISTRY.register(name, () -> new FuelItemBlock(block.get(), new Item.Properties().tab(McwFencesBOP.TAB_GROUP)));
         return block;
     }
 }

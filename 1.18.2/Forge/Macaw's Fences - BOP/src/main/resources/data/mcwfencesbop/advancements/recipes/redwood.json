@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfencesbop:redwood_picket_fence",
+	  "mcwfencesbop:redwood_stockade_fence",
+	  "mcwfencesbop:redwood_horse_fence",
+	  "mcwfencesbop:redwood_wired_fence",
+	  "mcwfencesbop:redwood_highley_gate",
+	  "mcwfencesbop:redwood_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "biomesoplenty:redwood_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

@@ -4,7 +4,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '5.1.+'
 }
 
-version = '1.19.3-1.1'
+version = '1.19.3-1.2'
 group = 'fr.samlegamer.mcwfencesbop'
 archivesBaseName = 'mcwfencesbop'
 
@@ -42,7 +42,8 @@ minecraft {
             // "REGISTRIES": For firing of registry events.
             // "REGISTRYDUMP": For getting the contents of all registries.
             property 'forge.logging.markers', 'REGISTRIES'
-
+			property 'mixin.env.remapRefMap', 'true'
+			property 'mixin.env.refMapRemappingFile',"${buildDir}/createSrgToMcp/output.srg"
             // Recommended logging level for the console
             // You can set various levels here.
             // Please read: https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels
@@ -132,7 +133,6 @@ dependencies {
     // that the dep is a ForgeGradle 'patcher' dependency, and its patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft 'net.minecraftforge:forge:1.19.3-44.1.23'
-
 	implementation fg.deobf("curse.maven:biomes-o-plenty-220318:4332045")
  	implementation fg.deobf("curse.maven:macaws-fences-and-walls-453925:5442214")
  	implementation fg.deobf("curse.maven:terrablender-563928:4284516")

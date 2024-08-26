@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfencesbop:hellbark_picket_fence",
+	  "mcwfencesbop:hellbark_stockade_fence",
+	  "mcwfencesbop:hellbark_horse_fence",
+	  "mcwfencesbop:hellbark_wired_fence",
+	  "mcwfencesbop:hellbark_highley_gate",
+	  "mcwfencesbop:hellbark_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "biomesoplenty:hellbark_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}
